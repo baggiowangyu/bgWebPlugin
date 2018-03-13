@@ -1,0 +1,9 @@
+; bgIEActiveXPlugin.def : 定义模块参数。
+
+LIBRARY      "bgIEActiveXPlugin.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

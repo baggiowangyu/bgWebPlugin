@@ -1,0 +1,57 @@
+// bgIEActiveXPlugin.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(bgIEActiveXPlugin.tlb)，该类型库将成为
+// bgIEActiveXPlugin.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(329B0C84-4B32-4CD0-AE19-30B939882CF6), version(1.0),
+  helpfile("bgIEActiveXPlugin.hlp"),
+  helpstring("bgIEActiveXPlugin ActiveX 控件模块"),
+  control ]
+library bgIEActiveXPluginLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CbgIEActiveXPluginCtrl 的主调度接口
+
+	[ uuid(41C9269F-5608-45C2-A1CD-AB4F62086525),
+	  helpstring("bgIEActiveXPlugin Control 的调度接口")]
+	dispinterface _DbgIEActiveXPlugin
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1), helpstring("方法GmGetVersion")] LONG GmGetVersion(void);
+			[id(2), helpstring("方法GmPlay")] ULONG GmPlay(BSTR url);
+			[id(3), helpstring("方法GmInit")] ULONG GmInit(void);
+			[id(4), helpstring("方法invoke")] void invoke(SHORT a);
+	};
+
+	//  CbgIEActiveXPluginCtrl 的事件调度接口
+
+	[ uuid(2F4791F4-29AA-46F4-A29A-9845F2EAD43D),
+	  helpstring("bgIEActiveXPlugin Control 的事件接口") ]
+	dispinterface _DbgIEActiveXPluginEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+			[id(1)] void calljs(SHORT ret);
+	};
+
+	//  CbgIEActiveXPluginCtrl 的类信息
+
+	[ uuid(E5496C7E-61E7-4F0B-9649-9B18354CFB67),
+	  helpstring("bgIEActiveXPlugin Control"), control ]
+	coclass bgIEActiveXPlugin
+	{
+		[default] dispinterface _DbgIEActiveXPlugin;
+		[default, source] dispinterface _DbgIEActiveXPluginEvents;
+	};
+
+};
