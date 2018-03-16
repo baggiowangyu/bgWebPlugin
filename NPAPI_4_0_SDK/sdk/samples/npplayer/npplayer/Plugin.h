@@ -1,12 +1,12 @@
 #pragma once
 #include "pluginbase.h"
 
-class CPlugin :
-	public nsPluginInstanceBase
+class CPlugin : public nsPluginInstanceBase
 {
 private:
 	NPP m_pNPInstance;
 	NPBool m_bInitialized;
+
 public:
 	CPlugin(NPP pNPInstance);
 	~CPlugin();

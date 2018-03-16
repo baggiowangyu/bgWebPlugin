@@ -42,6 +42,8 @@
 
 NPNetscapeFuncs NPNFuncs;
 
+//
+// 释放资源
 NPError OSCALL NP_Shutdown()
 {
   NS_PluginShutdown();
@@ -113,6 +115,11 @@ static NPError fillNetscapeFunctionTable(NPNetscapeFuncs* aNPNFuncs)
 //
 
 #ifdef XP_WIN
+
+//
+// 初始化插件，在NP_GetEntryPoints()后被调用
+// 初始化插件调用浏览器的函数表，参数aNPNFuncs带有该函数表信息
+// 我们可以自定义一个对象保存这些信息，今后就可以通过该对象调用方法来实现对浏览器的一些操作
 NPError OSCALL NP_Initialize(NPNetscapeFuncs* aNPNFuncs)
 {
   NPError rv = fillNetscapeFunctionTable(aNPNFuncs);
@@ -122,6 +129,9 @@ NPError OSCALL NP_Initialize(NPNetscapeFuncs* aNPNFuncs)
   return NS_PluginInitialize();
 }
 
+// 
+// 入口函数
+// 初始化浏览器调用插件的函数表，以NPP（np plugin）开头
 NPError OSCALL NP_GetEntryPoints(NPPluginFuncs* aNPPFuncs)
 {
   return fillPluginFunctionTable(aNPPFuncs);

@@ -33,6 +33,8 @@
  * the provisions above, a recipient may use your version of this file under
  * the terms of any one of the MPL, the GPL or the LGPL.
  *
+ * 这个文件中的函数都以NPP开头，用于定义浏览器调用插件的方法
+ * 
  * ***** END LICENSE BLOCK ***** */
 
 // Implementation of plugin entry points (NPP_*)

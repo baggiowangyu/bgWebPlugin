@@ -42,6 +42,7 @@
 #ifdef XP_WIN
 #include <windows.h>
 #include <windowsx.h>
+#include <iostream>
 #endif
 
 #ifdef XP_MAC
