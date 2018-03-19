@@ -231,6 +231,14 @@
 				RelativePath=".\debugger.h"
 				>
 			</File>
+			<File
+				RelativePath=".\output.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\output.h"
+				>
+			</File>
 		</Filter>
 		<File
 			RelativePath=".\readme.md"

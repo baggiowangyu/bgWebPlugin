@@ -113,3 +113,29 @@ protected:
 }
 
 #define GET_NPOBJECT_CLASS(_class) &s##_class##_NPClass
+
+class ConstructablePluginObject : public ScriptablePluginObjectBase
+{
+public:
+	ConstructablePluginObject(NPP npp)
+		: ScriptablePluginObjectBase(npp) {}
+
+	virtual bool Construct(const NPVariant *args, uint32_t argCount,
+		NPVariant *result);
+};
+
+
+class ScriptablePluginObject : public ScriptablePluginObjectBase
+{
+public:
+	ScriptablePluginObject(NPP npp)
+		: ScriptablePluginObjectBase(npp) {}
+
+	virtual bool HasMethod(NPIdentifier name);
+	virtual bool HasProperty(NPIdentifier name);
+	virtual bool GetProperty(NPIdentifier name, NPVariant *result);
+	virtual bool Invoke(NPIdentifier name, const NPVariant *args,
+		uint32_t argCount, NPVariant *result);
+	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount,
+		NPVariant *result);
+};
