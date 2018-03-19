@@ -212,9 +212,24 @@ NPError	NPP_GetValue(NPP instance, NPPVariable variable, void *value)
 	if (!instance)
 		return NPERR_INVALID_INSTANCE_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	//nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return NPERR_GENERIC_ERROR;
+
+	// 这里开始检查JavaScript的支持情况
+	switch (variable)
+	{
+	case NPPVpluginNameString:
+		*((char **)value) = "npGxxGmPlayer";
+		break;
+	case NPPVpluginDescriptionString:
+		*((char **)value) = "npGxxGmPlayer scriptability API plugin";
+		break;
+	case NPPVpluginScriptableNPObject:
+		 *(NPObject **)value = plugin->GetScriptableObject();
+		break;
+	}
 
 	return plugin->GetValue(variable, value);
 }

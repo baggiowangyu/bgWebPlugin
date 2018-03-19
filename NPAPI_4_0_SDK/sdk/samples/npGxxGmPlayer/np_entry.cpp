@@ -47,7 +47,6 @@ NPNetscapeFuncs NPNFuncs;
 NPError OSCALL NP_Shutdown()
 {
 	// NS_PluginShutdown()是我们自己实现的函数
-	OutputDebugStringA("NP_Shutdown");
 	NS_PluginShutdown();
 	return NPERR_NO_ERROR;
 }
@@ -124,7 +123,6 @@ static NPError fillNetscapeFunctionTable(NPNetscapeFuncs* aNPNFuncs)
 // 我们可以自定义一个对象保存这些信息，今后就可以通过该对象调用方法来实现对浏览器的一些操作
 NPError OSCALL NP_Initialize(NPNetscapeFuncs* aNPNFuncs)
 {
-	OutputDebugStringA("NP_Initialize");
 	NPError rv = fillNetscapeFunctionTable(aNPNFuncs);
 	if (rv != NPERR_NO_ERROR)
 		return rv;
@@ -138,10 +136,6 @@ NPError OSCALL NP_Initialize(NPNetscapeFuncs* aNPNFuncs)
 // 初始化浏览器调用插件的函数表，以NPP（np plugin）开头
 NPError OSCALL NP_GetEntryPoints(NPPluginFuncs* aNPPFuncs)
 {
-#ifdef _DEBUG
-	MessageBoxA(NULL, "", "", 0);
-#endif
-	OutputDebugStringA("NP_GetEntryPoints");
 	return fillPluginFunctionTable(aNPPFuncs);
 }
 #endif // XP_WIN
