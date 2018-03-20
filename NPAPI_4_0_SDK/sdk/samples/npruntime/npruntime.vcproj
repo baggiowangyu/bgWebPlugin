@@ -45,7 +45,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;NPRUNTIME_EXPORTS;XP_WIN;_X86_"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="4"
@@ -192,16 +192,16 @@
 				RelativePath=".\plugin.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\plugin.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Í·ÎÄ¼þ"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
-			<File
-				RelativePath=".\plugin.h"
-				>
-			</File>
 			<File
 				RelativePath=".\resource.h"
 				>

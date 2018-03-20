@@ -21,7 +21,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="2"
-			CharacterSet="1"
+			CharacterSet="2"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -237,6 +237,18 @@
 			</File>
 			<File
 				RelativePath=".\output.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Javascript½Ó¿Ú"
+			>
+			<File
+				RelativePath=".\npJsInterface.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\npJsInterface.h"
 				>
 			</File>
 		</Filter>

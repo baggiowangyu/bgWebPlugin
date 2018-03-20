@@ -1,13 +1,15 @@
 #pragma once
+#include <string>
 #include "pluginbase.h"
-
+#include "npJsInterface.h"
 #include "vlc/vlc.h"
+
 
 class CPlugin :
 	public nsPluginInstanceBase
 {
 public:
-	CPlugin(void);
+	//CPlugin(void);
 	CPlugin(NPP pNPInstance);
 	~CPlugin(void);
 
@@ -32,6 +34,7 @@ public:
 	NPWindow *m_Window;
 	HWND m_hWnd;
 
+	// Javascript交互对象
 	NPObject *m_pScriptableObject;
 
 public:
@@ -47,49 +50,35 @@ class ScriptablePluginObjectBase : public NPObject
 {
 public:
 	ScriptablePluginObjectBase(NPP npp)
-		: mNpp(npp)
-	{
-	}
+		: mNpp(npp) {}
 
-	virtual ~ScriptablePluginObjectBase()
-	{
-	}
+	virtual ~ScriptablePluginObjectBase() {}
 
 	// Virtual NPObject hooks called through this base class. Override
 	// as you see fit.
 	virtual void Invalidate();
 	virtual bool HasMethod(NPIdentifier name);
-	virtual bool Invoke(NPIdentifier name, const NPVariant *args,
-		uint32_t argCount, NPVariant *result);
-	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount,
-		NPVariant *result);
+	virtual bool Invoke(NPIdentifier name, const NPVariant *args, uint32_t argCount, NPVariant *result);
+	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount, NPVariant *result);
 	virtual bool HasProperty(NPIdentifier name);
 	virtual bool GetProperty(NPIdentifier name, NPVariant *result);
 	virtual bool SetProperty(NPIdentifier name, const NPVariant *value);
 	virtual bool RemoveProperty(NPIdentifier name);
 	virtual bool Enumerate(NPIdentifier **identifier, uint32_t *count);
-	virtual bool Construct(const NPVariant *args, uint32_t argCount,
-		NPVariant *result);
+	virtual bool Construct(const NPVariant *args, uint32_t argCount, NPVariant *result);
 
 public:
 	static void _Deallocate(NPObject *npobj);
 	static void _Invalidate(NPObject *npobj);
 	static bool _HasMethod(NPObject *npobj, NPIdentifier name);
-	static bool _Invoke(NPObject *npobj, NPIdentifier name,
-		const NPVariant *args, uint32_t argCount,
-		NPVariant *result);
-	static bool _InvokeDefault(NPObject *npobj, const NPVariant *args,
-		uint32_t argCount, NPVariant *result);
+	static bool _Invoke(NPObject *npobj, NPIdentifier name,	const NPVariant *args, uint32_t argCount, NPVariant *result);
+	static bool _InvokeDefault(NPObject *npobj, const NPVariant *args, uint32_t argCount, NPVariant *result);
 	static bool _HasProperty(NPObject * npobj, NPIdentifier name);
-	static bool _GetProperty(NPObject *npobj, NPIdentifier name,
-		NPVariant *result);
-	static bool _SetProperty(NPObject *npobj, NPIdentifier name,
-		const NPVariant *value);
+	static bool _GetProperty(NPObject *npobj, NPIdentifier name, NPVariant *result);
+	static bool _SetProperty(NPObject *npobj, NPIdentifier name, const NPVariant *value);
 	static bool _RemoveProperty(NPObject *npobj, NPIdentifier name);
-	static bool _Enumerate(NPObject *npobj, NPIdentifier **identifier,
-		uint32_t *count);
-	static bool _Construct(NPObject *npobj, const NPVariant *args,
-		uint32_t argCount, NPVariant *result);
+	static bool _Enumerate(NPObject *npobj, NPIdentifier **identifier, uint32_t *count);
+	static bool _Construct(NPObject *npobj, const NPVariant *args, uint32_t argCount, NPVariant *result);
 
 protected:
 	NPP mNpp;
@@ -120,22 +109,30 @@ public:
 	ConstructablePluginObject(NPP npp)
 		: ScriptablePluginObjectBase(npp) {}
 
-	virtual bool Construct(const NPVariant *args, uint32_t argCount,
-		NPVariant *result);
+	virtual bool Construct(const NPVariant *args, uint32_t argCount, NPVariant *result);
 };
+
+
+// 定义js处理函数
+typedef void (__stdcall * _Func_Js)(const NPVariant *args, uint32_t argCount, NPVariant *result);
+
+typedef struct _JS_PARAMS_
+{
+	int index_;
+	NPIdentifier npId_;
+	std::string interfaceName_;
+	_Func_Js jsFunc_;
+} JsParams;
 
 
 class ScriptablePluginObject : public ScriptablePluginObjectBase
 {
 public:
-	ScriptablePluginObject(NPP npp)
-		: ScriptablePluginObjectBase(npp) {}
+	ScriptablePluginObject(NPP npp);
 
 	virtual bool HasMethod(NPIdentifier name);
 	virtual bool HasProperty(NPIdentifier name);
 	virtual bool GetProperty(NPIdentifier name, NPVariant *result);
-	virtual bool Invoke(NPIdentifier name, const NPVariant *args,
-		uint32_t argCount, NPVariant *result);
-	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount,
-		NPVariant *result);
+	virtual bool Invoke(NPIdentifier name, const NPVariant *args, uint32_t argCount, NPVariant *result);
+	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount, NPVariant *result);
 };

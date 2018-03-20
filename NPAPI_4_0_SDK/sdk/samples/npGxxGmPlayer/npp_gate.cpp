@@ -42,6 +42,20 @@
 #include "pluginbase.h"
 #include "Plugin.h"
 
+char* NPP_GetMIMEDescription(void)
+{
+	return "application/npGxxGmPlayer-plugin:.foo:Gosuncn goldmsg media player";
+}
+
+NPError NPP_Initialize(void)
+{
+	return NPERR_NO_ERROR;
+}
+
+void NPP_Shutdown(void)
+{
+}
+
 // here the plugin creates a plugin instance object which 
 // will be associated with this newly created NPP instance and 
 // will do all the necessary job
@@ -122,6 +136,33 @@ NPError NPP_SetWindow (NPP instance, NPWindow* pNPWindow)
 		return plugin->SetWindow(pNPWindow);
 
 	return NPERR_NO_ERROR;
+}
+
+NPError	NPP_GetValue(NPP instance, NPPVariable variable, void *value)
+{
+	if (!instance)
+		return NPERR_INVALID_INSTANCE_ERROR;
+
+	//nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
+	if (!plugin) 
+		return NPERR_GENERIC_ERROR;
+
+	// 这里开始检查JavaScript的支持情况
+	switch (variable)
+	{
+	case NPPVpluginNameString:
+		*((char **)value) = "npGxxGmPlayer";
+		break;
+	case NPPVpluginDescriptionString:
+		*((char **)value) = "npGxxGmPlayer scriptability API plugin";
+		break;
+	case NPPVpluginScriptableNPObject:
+		*(NPObject **)value = plugin->GetScriptableObject();
+		break;
+	}
+
+	return plugin->GetValue(variable, value);
 }
 
 NPError NPP_NewStream(NPP instance, NPMIMEType type, NPStream* stream, NPBool seekable, uint16_t* stype)
@@ -208,33 +249,6 @@ void NPP_URLNotify(NPP instance, const char* url, NPReason reason, void* notifyD
 	plugin->URLNotify(url, reason, notifyData);
 }
 
-NPError	NPP_GetValue(NPP instance, NPPVariable variable, void *value)
-{
-	if (!instance)
-		return NPERR_INVALID_INSTANCE_ERROR;
-
-	//nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
-	CPlugin * plugin = (CPlugin *)instance->pdata;
-	if (!plugin) 
-		return NPERR_GENERIC_ERROR;
-
-	// 这里开始检查JavaScript的支持情况
-	switch (variable)
-	{
-	case NPPVpluginNameString:
-		*((char **)value) = "npGxxGmPlayer";
-		break;
-	case NPPVpluginDescriptionString:
-		*((char **)value) = "npGxxGmPlayer scriptability API plugin";
-		break;
-	case NPPVpluginScriptableNPObject:
-		 *(NPObject **)value = plugin->GetScriptableObject();
-		break;
-	}
-
-	return plugin->GetValue(variable, value);
-}
-
 NPError NPP_SetValue(NPP instance, NPNVariable variable, void *value)
 {
 	if (!instance)
@@ -257,4 +271,17 @@ int16_t	NPP_HandleEvent(NPP instance, void* event)
 		return 0;
 
 	return plugin->HandleEvent(event);
+}
+
+NPObject *NPP_GetScriptableInstance(NPP instance)
+{
+	if(!instance)
+		return 0;
+
+	NPObject *npobj = 0;
+	nsPluginInstanceBase * pPlugin = (nsPluginInstanceBase *)instance->pdata;
+	if (!pPlugin)
+		npobj = pPlugin->GetScriptableObject();
+
+	return npobj;
 }
