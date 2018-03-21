@@ -147,7 +147,7 @@ NPError OSCALL NP_Initialize(NPNetscapeFuncs* aNPNFuncs
 	NPNFuncs.forceredraw			= aNPNFuncs->forceredraw;
 	NPNFuncs.getstringidentifier	= aNPNFuncs->getstringidentifier;
 	NPNFuncs.getstringidentifiers	= aNPNFuncs->getstringidentifiers;
-	NPNFuncs.getstringidentifier	= aNPNFuncs->getintidentifier;
+	NPNFuncs.getintidentifier		= aNPNFuncs->getintidentifier;
 	NPNFuncs.identifierisstring		= aNPNFuncs->identifierisstring;
 	NPNFuncs.utf8fromidentifier		= aNPNFuncs->utf8fromidentifier;
 	NPNFuncs.intfromidentifier		= aNPNFuncs->intfromidentifier;

@@ -279,7 +279,7 @@ NPObject *NPP_GetScriptableInstance(NPP instance)
 		return 0;
 
 	NPObject *npobj = 0;
-	nsPluginInstanceBase * pPlugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * pPlugin = (CPlugin *)instance->pdata;
 	if (!pPlugin)
 		npobj = pPlugin->GetScriptableObject();
 
