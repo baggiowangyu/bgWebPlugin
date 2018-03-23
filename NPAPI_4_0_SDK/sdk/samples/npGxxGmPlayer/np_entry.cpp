@@ -57,6 +57,7 @@ NPNetscapeFuncs NPNFuncs;
 // 初始化浏览器调用插件的函数表，以NPP（np plugin）开头
 NPError OSCALL NP_GetEntryPoints(NPPluginFuncs* aNPPFuncs)
 {
+	DebugStringOutput("[npGxxGmPlayer] 进入NP_GetEntryPoints()函数...\n");
 	SetupMiniDumpMonitor("D:\\npGxxGmPlayer.dmp");
 
 #ifdef _DEBUG

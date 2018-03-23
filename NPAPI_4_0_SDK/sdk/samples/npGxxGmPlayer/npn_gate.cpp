@@ -67,7 +67,7 @@ NPError NPN_GetURLNotify(NPP instance, const char *url, const char *target, void
 	NPError rv = NPERR_NO_ERROR;
 
 	if (navMinorVers >= NPVERS_HAS_NOTIFICATION)
-		rv = (*NPNFuncs.geturlnotify)(instance, url, target, notifyData);
+		rv = NPNFuncs.geturlnotify(instance, url, target, notifyData);
 	else
 		rv = NPERR_INCOMPATIBLE_VERSION_ERROR;
 
@@ -76,7 +76,7 @@ NPError NPN_GetURLNotify(NPP instance, const char *url, const char *target, void
 
 NPError NPN_GetURL(NPP instance, const char *url, const char *target)
 {
-	return (*NPNFuncs.geturl)(instance, url, target);
+	return NPNFuncs.geturl(instance, url, target);
 }
 
 NPError NPN_PostURLNotify(NPP instance, const char* url, const char* window, uint32_t len, const char* buf, NPBool file, void* notifyData)
@@ -85,7 +85,7 @@ NPError NPN_PostURLNotify(NPP instance, const char* url, const char* window, uin
 	NPError rv = NPERR_NO_ERROR;
 
 	if (navMinorVers >= NPVERS_HAS_NOTIFICATION)
-		rv = (*NPNFuncs.posturlnotify)(instance, url, window, len, buf, file, notifyData);
+		rv = NPNFuncs.posturlnotify(instance, url, window, len, buf, file, notifyData);
 	else
 		rv = NPERR_INCOMPATIBLE_VERSION_ERROR;
 
@@ -94,12 +94,12 @@ NPError NPN_PostURLNotify(NPP instance, const char* url, const char* window, uin
 
 NPError NPN_PostURL(NPP instance, const char* url, const char* window, uint32_t len, const char* buf, NPBool file)
 {
-	return (*NPNFuncs.posturl)(instance, url, window, len, buf, file);
+	return NPNFuncs.posturl(instance, url, window, len, buf, file);
 } 
 
 NPError NPN_RequestRead(NPStream* stream, NPByteRange* rangeList)
 {
-	return (*NPNFuncs.requestread)(stream, rangeList);
+	return NPNFuncs.requestread(stream, rangeList);
 }
 
 NPError NPN_NewStream(NPP instance, NPMIMEType type, const char* target, NPStream** stream)
@@ -109,7 +109,7 @@ NPError NPN_NewStream(NPP instance, NPMIMEType type, const char* target, NPStrea
 	NPError rv = NPERR_NO_ERROR;
 
 	if (navMinorVersion >= NPVERS_HAS_STREAMOUTPUT)
-		rv = (*NPNFuncs.newstream)(instance, type, target, stream);
+		rv = NPNFuncs.newstream(instance, type, target, stream);
 	else
 		rv = NPERR_INCOMPATIBLE_VERSION_ERROR;
 
@@ -122,7 +122,7 @@ int32_t NPN_Write(NPP instance, NPStream *stream, int32_t len, void *buffer)
 	int32_t rv = 0;
 
 	if (navMinorVersion >= NPVERS_HAS_STREAMOUTPUT)
-		rv = (*NPNFuncs.write)(instance, stream, len, buffer);
+		rv = NPNFuncs.write(instance, stream, len, buffer);
 	else
 		rv = -1;
 
@@ -135,7 +135,7 @@ NPError NPN_DestroyStream(NPP instance, NPStream* stream, NPError reason)
 	NPError rv = NPERR_NO_ERROR;
 
 	if (navMinorVersion >= NPVERS_HAS_STREAMOUTPUT)
-		rv = (*NPNFuncs.destroystream)(instance, stream, reason);
+		rv = NPNFuncs.destroystream(instance, stream, reason);
 	else
 		rv = NPERR_INCOMPATIBLE_VERSION_ERROR;
 
@@ -149,52 +149,52 @@ void NPN_Status(NPP instance, const char *message)
 
 const char* NPN_UserAgent(NPP instance)
 {
-	return (*NPNFuncs.uagent)(instance);
+	return NPNFuncs.uagent(instance);
 }
 
 void* NPN_MemAlloc(uint32_t size)
 {
-	return (*NPNFuncs.memalloc)(size);
+	return NPNFuncs.memalloc(size);
 }
 
 void NPN_MemFree(void* ptr)
 {
-	(*NPNFuncs.memfree)(ptr);
+	NPNFuncs.memfree(ptr);
 }
 
 uint32_t NPN_MemFlush(uint32_t size)
 {
-	return (*NPNFuncs.memflush)(size);
+	return NPNFuncs.memflush(size);
 }
 
 void NPN_ReloadPlugins(NPBool reloadPages)
 {
-	(*NPNFuncs.reloadplugins)(reloadPages);
+	NPNFuncs.reloadplugins(reloadPages);
 }
 
 NPError NPN_GetValue(NPP instance, NPNVariable variable, void *value)
 {
-	return (*NPNFuncs.getvalue)(instance, variable, value);
+	return NPNFuncs.getvalue(instance, variable, value);
 }
 
 NPError NPN_SetValue(NPP instance, NPPVariable variable, void *value)
 {
-	return (*NPNFuncs.setvalue)(instance, variable, value);
+	return NPNFuncs.setvalue(instance, variable, value);
 }
 
 void NPN_InvalidateRect(NPP instance, NPRect *invalidRect)
 {
-	(*NPNFuncs.invalidaterect)(instance, invalidRect);
+	NPNFuncs.invalidaterect(instance, invalidRect);
 }
 
 void NPN_InvalidateRegion(NPP instance, NPRegion invalidRegion)
 {
-	(*NPNFuncs.invalidateregion)(instance, invalidRegion);
+	NPNFuncs.invalidateregion(instance, invalidRegion);
 }
 
 void NPN_ForceRedraw(NPP instance)
 {
-	(*NPNFuncs.forceredraw)(instance);
+	NPNFuncs.forceredraw(instance);
 }
 
 NPIdentifier NPN_GetStringIdentifier(const NPUTF8 *name)

@@ -45,7 +45,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;NPGXXGMPLAYER_EXPORTS;XP_WIN;_X86_"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
+				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="4"
@@ -176,39 +176,9 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\Plugin.h"
-				>
-			</File>
-			<File
 				RelativePath=".\resource.h"
 				>
 			</File>
-			<Filter
-				Name="源文件"
-				Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
-				UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
-				>
-				<File
-					RelativePath=".\np_entry.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\npGxxGmPlayer.def"
-					>
-				</File>
-				<File
-					RelativePath=".\npn_gate.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\npp_gate.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\Plugin.cpp"
-					>
-				</File>
-			</Filter>
 		</Filter>
 		<Filter
 			Name="资源文件"
@@ -241,16 +211,74 @@
 			</File>
 		</Filter>
 		<Filter
-			Name="Javascript接口"
+			Name="NPAPI框架"
 			>
 			<File
-				RelativePath=".\npJsInterface.cpp"
+				RelativePath=".\np_entry.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\npJsInterface.h"
+				RelativePath=".\npGxxGmPlayer.def"
 				>
 			</File>
+			<File
+				RelativePath=".\npn_gate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\npp_gate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Plugin.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Plugin.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="源文件"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+		</Filter>
+		<Filter
+			Name="插件业务逻辑模块"
+			>
+			<Filter
+				Name="Javascript接口"
+				>
+				<File
+					RelativePath=".\npJsInterface.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\npJsInterface.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="业务功能模块"
+				>
+				<File
+					RelativePath=".\GxxGmPlayerImp.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\GxxGmPlayerImp.h"
+					>
+				</File>
+				<Filter
+					Name="播放器"
+					>
+					<Filter
+						Name="播放核心"
+						>
+					</Filter>
+				</Filter>
+			</Filter>
 		</Filter>
 		<File
 			RelativePath=".\readme.md"

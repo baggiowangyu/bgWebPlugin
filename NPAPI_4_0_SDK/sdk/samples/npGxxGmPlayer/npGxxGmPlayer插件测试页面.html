@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>npGxxGmPlayer 插件测试页面</title>
+ </head>
+ <body>
+  <script>
+  // 播放器对象
+  var plugin;
+
+  // 回调函数
+  function msgCallback() {
+	  alert("回调函数已被插件调用");
+  }
+
+  // 初始化播放器
+  function OnInit() {
+	  plugin = document.getElementById("npGxxGmPlayer");
+  }
+
+  function InstallCallback() {
+	  plugin.JsCallback = msgCallback;
+  }
+
+  // 获取版本号
+  function GetVersion() {
+	  plugin.GetVersion();
+  }
+
+  // 获取插件描述
+  function GetPluginDescript() {
+	  plugin.GetPluginDescript();
+  }
+
+  // 测试回调函数
+  function TestCallback() {
+	  plugin.TestJsCallback();
+  }
+
+  //////////////////////////////////////////////////
+  function InitPlayer() {
+	  plugin.InitializeMediaPlayer("vlc");
+  }
+
+  function DestroyPlayer() {
+	  plugin.DestroyMediaPlayer();
+  }
+
+  function PlayByLocalPath() {
+	  var path = document.getElementById("url").value;
+	  plugin.MediaPlayerPlayByLocalPath(path);
+  }
+
+  function PlayByUrl() {
+	  var url = document.getElementById("url").value;
+	  plugin.MediaPlayerPlayByLocalPath(url);
+  }
+
+  function StopPlay() {
+	  plugin.MediaPlayerStop();
+  }
+  </script>
+
+  <embed type="application/npGxxGmPlayer-plugin" name="npGxxGmPlayer" id="npGxxGmPlayer" width="800" height="600">
+
+  <br />
+
+  <input type="button" value="初始化插件" onclick="OnInit()" />
+  <input type="button" value="设置回调函数" onclick="InstallCallback()" />
+  <input type="button" value="测试回调函数" onclick="TestCallback()" />
+  <input type="button" value="获取版本号" onclick="GetVersion()" />
+  <input type="button" value="获取插件描述" onclick="GetPluginDescript()" />
+
+  <br />
+  <input type="text" value="" id="url" width="800" />
+  <input type="button" value="初始化播放器" onclick="InitPlayer()" />
+  <input type="button" value="销毁播放器" onclick="DestroyPlayer()" />
+  <input type="button" value="播放本地文件" onclick="PlayByLocalPath()" />
+  <input type="button" value="播放网络文件" onclick="PlayByUrl()" />
+  <input type="button" value="停止播放" onclick="StopPlay()" />
+
+
+ </body>
+</html>

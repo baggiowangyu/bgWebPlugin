@@ -44,7 +44,7 @@
 
 char* NPP_GetMIMEDescription(void)
 {
-	return "application/npGxxGmPlayer-plugin:.foo:Gosuncn goldmsg media player";
+	return "application/npGxxGmPlayer-plugin";
 }
 
 NPError NPP_Initialize(void)
@@ -91,7 +91,7 @@ NPError NPP_Destroy (NPP instance, NPSavedData** save)
 	if (!instance)
 		return NPERR_INVALID_INSTANCE_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (plugin) {
 		plugin->shut();
 		NS_DestroyPluginInstance(plugin);
@@ -110,7 +110,7 @@ NPError NPP_SetWindow (NPP instance, NPWindow* pNPWindow)
 	if (!pNPWindow)
 		return NPERR_GENERIC_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 
 	if (!plugin) 
 		return NPERR_GENERIC_ERROR;
@@ -170,7 +170,7 @@ NPError NPP_NewStream(NPP instance, NPMIMEType type, NPStream* stream, NPBool se
 	if (!instance)
 		return NPERR_INVALID_INSTANCE_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return NPERR_GENERIC_ERROR;
 
@@ -182,7 +182,7 @@ int32_t NPP_WriteReady (NPP instance, NPStream *stream)
 	if (!instance)
 		return 0x0fffffff;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return 0x0fffffff;
 
@@ -194,7 +194,7 @@ int32_t NPP_Write (NPP instance, NPStream *stream, int32_t offset, int32_t len, 
 	if (!instance)
 		return len;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return len;
 
@@ -206,7 +206,7 @@ NPError NPP_DestroyStream (NPP instance, NPStream *stream, NPError reason)
 	if (!instance)
 		return NPERR_INVALID_INSTANCE_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return NPERR_GENERIC_ERROR;
 
@@ -218,7 +218,7 @@ void NPP_StreamAsFile (NPP instance, NPStream* stream, const char* fname)
 	if (!instance)
 		return;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return;
 
@@ -230,7 +230,7 @@ void NPP_Print (NPP instance, NPPrint* printInfo)
 	if (!instance)
 		return;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return;
 
@@ -242,7 +242,7 @@ void NPP_URLNotify(NPP instance, const char* url, NPReason reason, void* notifyD
 	if (!instance)
 		return;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return;
 
@@ -254,7 +254,7 @@ NPError NPP_SetValue(NPP instance, NPNVariable variable, void *value)
 	if (!instance)
 		return NPERR_INVALID_INSTANCE_ERROR;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return NPERR_GENERIC_ERROR;
 
@@ -266,7 +266,7 @@ int16_t	NPP_HandleEvent(NPP instance, void* event)
 	if (!instance)
 		return 0;
 
-	nsPluginInstanceBase * plugin = (nsPluginInstanceBase *)instance->pdata;
+	CPlugin * plugin = (CPlugin *)instance->pdata;
 	if (!plugin) 
 		return 0;
 

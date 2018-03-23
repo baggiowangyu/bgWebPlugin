@@ -1,8 +1,6 @@
 #pragma once
-#include <string>
 #include "pluginbase.h"
 #include "npJsInterface.h"
-#include "vlc/vlc.h"
 
 
 class CPlugin :
@@ -36,12 +34,11 @@ public:
 
 	// Javascript交互对象
 	NPObject *m_pScriptableObject;
-
-public:
-	libvlc_instance_t*	m_vlcInst;
-	libvlc_media_player_t*	m_vlcMplay;
-	libvlc_media_t*	m_vlcMedia;
+	NPObject *m_pJsCallbackObject;
 };
+
+// 这里声明一个全局的插件对象
+extern CPlugin *global_plugin_;
 
 // Helper class that can be used to map calls to the NPObject hooks
 // into virtual methods on instances of classes that derive from this
@@ -113,15 +110,28 @@ public:
 };
 
 
+//////////////////////////////////////////////////////////////////////////
+//
+// 这里定义一个映射结构体
+// 初始化时，我们需要将此结构体进行填充
+
+enum _JsFuncType_
+{
+	JsFuncType_None,
+	JsFuncType_Interface,
+	JsFuncType_Property
+};
+
 // 定义js处理函数
 typedef void (__stdcall * _Func_Js)(const NPVariant *args, uint32_t argCount, NPVariant *result);
 
 typedef struct _JS_PARAMS_
 {
-	int index_;
-	NPIdentifier npId_;
-	std::string interfaceName_;
-	_Func_Js jsFunc_;
+	int index_;						// 索引，从0开始
+	NPIdentifier npId_;				// 接口ID，初始化时通过接口名称计算出来
+	const char *interfaceName_;		// 接口名称，这里之前用了NULL，导致出现了一个大坑，就是在初始化std::string的时候用NULL初始化了，导致插件直接崩溃了...真是悲剧
+	_Func_Js jsFunc_;				// 接口处理函数
+	enum _JsFuncType_ jsFuncType_;	// 
 } JsParams;
 
 
@@ -133,6 +143,7 @@ public:
 	virtual bool HasMethod(NPIdentifier name);
 	virtual bool HasProperty(NPIdentifier name);
 	virtual bool GetProperty(NPIdentifier name, NPVariant *result);
+	virtual bool SetProperty(NPIdentifier name, const NPVariant *value);
 	virtual bool Invoke(NPIdentifier name, const NPVariant *args, uint32_t argCount, NPVariant *result);
 	virtual bool InvokeDefault(const NPVariant *args, uint32_t argCount, NPVariant *result);
 };
