@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{44436D1D-970F-7E02-EDA1-3A8DAD062A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\scripting">
+      <UniqueIdentifier>{ABED3277-C190-E1C2-4E9C-B046D52C16F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClCompile Include="examples\scripting\post_message.cc">
+      <Filter>examples\scripting</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

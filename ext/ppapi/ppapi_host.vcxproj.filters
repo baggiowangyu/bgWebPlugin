@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="host">
+      <UniqueIdentifier>{D877ED5D-5BA8-20DA-F98B-FABAACD9EF89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClInclude Include="host\resource_host.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\instance_message_filter.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\dispatch_host_message.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClCompile Include="host\message_filter_host.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClInclude Include="host\ppapi_host.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\resource_message_filter.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\ppapi_host_export.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClCompile Include="host\resource_message_filter.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\resource_message_handler.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClInclude Include="host\resource_message_handler.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClCompile Include="host\host_message_context.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\resource_host.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClInclude Include="host\message_filter_host.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClCompile Include="host\ppapi_host.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClInclude Include="host\host_message_context.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClCompile Include="host\instance_message_filter.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClInclude Include="host\host_factory.h">
+      <Filter>host</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{44436D1D-970F-7E02-EDA1-3A8DAD062A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\gamepad">
+      <UniqueIdentifier>{930DED89-AB29-FBA2-2E5E-CDFDD19A7E73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClCompile Include="examples\gamepad\gamepad.cc">
+      <Filter>examples\gamepad</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

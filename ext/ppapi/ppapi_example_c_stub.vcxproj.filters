@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{44436D1D-970F-7E02-EDA1-3A8DAD062A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\stub">
+      <UniqueIdentifier>{B48B90D4-E26A-F2DA-FCAD-E91A34E1F057}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClCompile Include="examples\stub\stub.c">
+      <Filter>examples\stub</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

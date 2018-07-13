@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43AA5FCB-CB85-7B34-7485-7A999C46A978}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mesa</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\..\third_party\cygwin\bin\;$(MSBuildProjectDirectory)\..\..\third_party\python_26\</ExecutablePath>
+    <OutDir>..\..\build\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4396;4503;4819;4100;4121;4125;4127;4130;4131;4189;4201;4238;4244;4245;4310;4428;4481;4505;4510;4512;4530;4610;4611;4701;4702;4706;4005;4018;4065;4090;4099;4113;4133;4146;4267;4273;4291;4305;4334;4748;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <ProgramDatabaseFile>$(TargetPath).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4396;4503;4819;4100;4121;4125;4127;4130;4131;4189;4201;4238;4244;4245;4310;4428;4481;4505;4510;4512;4530;4610;4611;4701;4702;4706;4005;4018;4065;4090;4099;4113;4133;4146;4267;4273;4291;4305;4334;4748;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <ProgramDatabaseFile>$(TargetPath).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /Oy- %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4396;4503;4819;4100;4121;4125;4127;4130;4131;4189;4201;4238;4244;4245;4310;4428;4481;4505;4510;4512;4530;4610;4611;4701;4702;4706;4005;4018;4065;4090;4099;4113;4133;4146;4267;4273;4291;4305;4334;4748;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/safeseh /dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <ProgramDatabaseFile>$(TargetPath).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP /Oy- %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4396;4503;4819;4100;4121;4125;4127;4130;4131;4189;4201;4238;4244;4245;4310;4428;4481;4505;4510;4512;4530;4610;4611;4701;4702;4706;4005;4018;4065;4090;4099;4113;4133;4146;4267;4273;4291;4305;4334;4748;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>wininet.lib;dnsapi.lib;version.lib;msimg32.lib;ws2_32.lib;usp10.lib;psapi.lib;dbghelp.lib;winmm.lib;shlwapi.lib;kernel32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;user32.lib;uuid.lib;odbc32.lib;odbccp32.lib;delayimp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Windows Kits/8.0/Lib/win8/um/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/dynamicbase /ignore:4199 /ignore:4221 /nxcompat %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>dbghelp.dll;dwmapi.dll;shell32.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>olepro32.lib</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <ProgramDatabaseFile>$(TargetPath).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DllDataFileName>%(Filename).dlldata.c</DllDataFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>../..;$(OutDir)obj/global_intermediate;..\..\third_party\wtl\include;..\talloc;MesaLib\src\glsl;MesaLib\src\mapi;MesaLib\src\mesa;MesaLib\src\mesa\main;MesaLib\include;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>MAPI_GLAPI_CURRENT;HAVE_STRNLEN;_WIN32_WINNT=0x0602;WINVER=0x0602;WIN32;_WINDOWS;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_SECURE_ATL;CHROMIUM_BUILD;COMPONENT_BUILD;TOOLKIT_VIEWS=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_CONFIGURATION_POLICY;ENABLE_INPUT_SPEECH;ENABLE_NOTIFICATIONS;NO_TCMALLOC;ENABLE_GPU=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_AUTOMATION=1;ENABLE_GOOGLE_NOW=1;ENABLE_LANGUAGE_DETECTION=1;ENABLE_PRINTING=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_MESSAGE_CENTER=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="mesa.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MesaLib\src\glsl\loop_analysis.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_expression_flattening.h"/>
+    <ClInclude Include="MesaLib\src\glsl\list.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ast.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir.h"/>
+    <ClInclude Include="MesaLib\src\glsl\safe_strcmp.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_print_visitor.h"/>
+    <ClInclude Include="MesaLib\src\glsl\s_expression.h"/>
+    <ClInclude Include="MesaLib\src\glsl\builtin_variables.h"/>
+    <ClInclude Include="MesaLib\src\glsl\glsl_parser_extras.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_basic_block.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_function_inlining.h"/>
+    <ClInclude Include="MesaLib\src\glsl\program.h"/>
+    <ClInclude Include="MesaLib\src\glsl\builtin_types.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_variable_refcount.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_hierarchical_visitor.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_rvalue_visitor.h"/>
+    <ClInclude Include="MesaLib\src\glsl\linker.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_reader.h"/>
+    <ClInclude Include="MesaLib\src\glsl\glsl_types.h"/>
+    <ClInclude Include="MesaLib\src\glsl\glsl_symbol_table.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_visitor.h"/>
+    <ClInclude Include="MesaLib\src\glsl\glsl_parser.h"/>
+    <ClInclude Include="MesaLib\src\glsl\ir_optimization.h"/>
+    <ClInclude Include="MesaLib\src\glsl\glcpp\glcpp-parse.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_atifragshader.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_depth.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_aalinetemp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_aaline.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_texfilter.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_lines.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_logic.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_linetemp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_stencil.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_alpha.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_fragprog.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_fog.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_masking.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_tritemp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_trispan.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_context.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_aatriangle.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_points.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_zoom.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_span.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_accum.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_texcombine.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_aatritemp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_feedback.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_blend.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\swrast.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_spantemp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast\s_triangle.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_context.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_exec.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_save.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_attrib_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_attrib.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo_split.h"/>
+    <ClInclude Include="MesaLib\src\mesa\vbo\vbo.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_uniform.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\program_parser.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_instruction.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\program.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\ir_to_mesa.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\programopt.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\arbprogparse.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\program_parse.tab.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_cache.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_print.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_parameter.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_optimize.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\symbol_table.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\nvvertparse.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_noise.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\nvfragparse.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_statevars.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\hash_table.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_execute.h"/>
+    <ClInclude Include="MesaLib\src\mesa\program\prog_parameter_layout.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_vb_cliptmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_pipeline.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_vp_build.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_context.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\tnl.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_vertex.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_vb_lighttmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\tnl\t_vb_rendertmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast_setup\ss_triangle.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast_setup\ss_vb.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast_setup\swrast_setup.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast_setup\ss_context.h"/>
+    <ClInclude Include="MesaLib\src\mesa\swrast_setup\ss_tritmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\simple_list.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\arrayobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\imports.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\depth.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\matrix.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texenvprogram.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texrender.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\depthstencil.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\get.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\transformfeedback.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\macros.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\api_validate.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\remap_helper.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\attrib.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\shared.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\histogram.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\readpix.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\enable.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\compiler.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\uniforms.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\polygon.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\stencil.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\api_noop.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\light.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\condrender.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\clear.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texcompress_s3tc.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\pixelstore.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texfetch_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\image.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\mfeatures.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\api_exec.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\ffvertex_prog.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\framebuffer.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\shaderapi.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\mm.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\shaderobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\fbobject.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\buffers.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\api_loopback.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\debug.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\context.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\vtxfmt.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\viewport.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texstate.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\points.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\syncobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\nvprogram.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\renderbuffer.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\lines.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\queryobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\state.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\core.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texparam.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\version.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\bufferobj.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\bitset.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\config.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\eval.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\convolve.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\dlist.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\feedback.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\mipmap.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\arbprogram.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\teximage.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\dispatch.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\dlopen.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texpal.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texstore.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\pixel.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\extensions.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\accum.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\drawtex.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\clip.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texgetimage.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\rastpos.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\vtxfmt_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texformat.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\drawpix.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\dd.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\formats.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texcompress_fxt1.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\scissor.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texfetch.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\glheader.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\api_arrayelt.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texcompress.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texgen.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\blend.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\cpuinfo.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\colormac.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\multisample.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\mtypes.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\enums.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\hint.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\atifragshader.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\varray.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\colortab.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\texenv.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\remap.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\hash.h"/>
+    <ClInclude Include="MesaLib\src\mesa\main\fog.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_trans_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_matrix.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_norm_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_vector.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_translate.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_copy_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_clip_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_xform.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_debug_util.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_eval.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_debug.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_dotprod_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mesa\math\m_xform_tmp.h"/>
+    <ClInclude Include="MesaLib\src\mapi\mapi\u_compiler.h"/>
+    <ClInclude Include="MesaLib\src\mapi\mapi\u_thread.h"/>
+    <ClInclude Include="MesaLib\src\mapi\mapi\u_execmem.h"/>
+    <ClInclude Include="MesaLib\src\mapi\mapi\u_macros.h"/>
+    <ClInclude Include="MesaLib\src\mapi\mapi\u_current.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapioffsets.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapitemp.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapi.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapitable.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapi_priv.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glapidispatch.h"/>
+    <ClInclude Include="MesaLib\src\mapi\glapi\glprocs.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MesaLib\src\glsl\ast_function.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_expression_flattening.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_constant_propagation.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_set_program_inouts.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_hv_accept.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_vec_index_to_swizzle.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glsl_symbol_table.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_vec_index_to_cond_assign.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_constant_expression.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\loop_analysis.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_dead_functions.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_dead_code.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\safe_strcmp.c"/>
+    <ClCompile Include="MesaLib\src\glsl\ast_to_hir.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_copy_propagation.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_hierarchical_visitor.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_algebraic.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\link_functions.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_function_inlining.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_basic_block.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_variable_refcount.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_div_to_mul_rcp.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_if_to_cond_assign.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\linker.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glsl_parser_extras.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_function_can_inline.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_tree_grafting.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\loop_unroll.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_function.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_explog_to_explog2.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_swizzle_swizzle.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_rvalue_visitor.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_noop_swizzle.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\s_expression.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_constant_variable.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_print_visitor.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\builtin_function.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_validate.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\lower_noise.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_mod_to_fract.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_lower_jumps.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_import_prototypes.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_if_simplification.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_reader.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_structure_splitting.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_constant_folding.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_clone.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_sub_to_add_neg.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glsl_parser.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_dead_code_local.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glsl_lexer.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ast_type.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glsl_types.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\hir_field_selection.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ast_expr.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\lower_variable_index_to_cond_assign.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_variable.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\loop_controls.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\opt_redundant_jumps.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\ir_mat_op_to_vec.cpp"/>
+    <ClCompile Include="MesaLib\src\glsl\glcpp\glcpp-lex.c"/>
+    <ClCompile Include="MesaLib\src\glsl\glcpp\glcpp-parse.c"/>
+    <ClCompile Include="MesaLib\src\glsl\glcpp\pp.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_atifragshader.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_readpix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_depth.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_texfilter.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_clear.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_aaline.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_bitmap.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_logic.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_lines.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_stencil.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_fragprog.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_fog.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_masking.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_alpha.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_context.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_aatriangle.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_blit.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_points.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_span.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_copypix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_zoom.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_accum.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_texcombine.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_feedback.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_drawpix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_blend.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast\s_triangle.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_context.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_save_api.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_exec_array.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_save.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_split_inplace.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_save_draw.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_split_copy.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_exec_eval.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_rebase.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_split.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_exec_draw.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_save_loopback.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_exec_api.c"/>
+    <ClCompile Include="MesaLib\src\mesa\vbo\vbo_exec.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\program_parse_extra.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_uniform.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_instruction.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\hash_table.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_cache.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\programopt.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\ir_to_mesa.cpp"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_print.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\symbol_table.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\program.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_optimize.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\nvvertparse.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_noise.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\nvfragparse.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\arbprogparse.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_statevars.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_execute.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\lex.yy.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\program_parse.tab.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_parameter_layout.c"/>
+    <ClCompile Include="MesaLib\src\mesa\program\prog_parameter.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_draw.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_light.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_normals.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_cull.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_pipeline.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_fog.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vertex_sse.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_program.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vp_build.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_render.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_context.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_rasterpos.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_points.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vertex_generic.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vertex.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_texmat.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_texgen.c"/>
+    <ClCompile Include="MesaLib\src\mesa\tnl\t_vb_vertex.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast_setup\ss_triangle.c"/>
+    <ClCompile Include="MesaLib\src\mesa\swrast_setup\ss_context.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\arrayobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\imports.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\dlopen.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\getstring.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\depth.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\matrix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\api_validate.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\depthstencil.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texrender.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\fbobject.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\transformfeedback.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\get.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\attrib.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\histogram.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\arbprogram.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\readpix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\polygon.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\uniforms.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\api_noop.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\stencil.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\mm.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\light.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\clear.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\condrender.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texcompress_s3tc.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\pixelstore.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\version.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\image.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\ffvertex_prog.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\framebuffer.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\api_exec.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\hint.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\feedback.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\shared.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\api_loopback.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\shaderobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\buffers.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\enable.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\vtxfmt.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\debug.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\viewport.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\context.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\shaderapi.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texstate.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\syncobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\points.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texenvprogram.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\lines.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\renderbuffer.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\nvprogram.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\state.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texparam.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\eval.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\bufferobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\dlist.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\convolve.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\scissor.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\multisample.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\teximage.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texpal.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texstore.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\mipmap.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\pixel.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\accum.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\drawtex.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\extensions.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\clip.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texgetimage.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\rastpos.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\formats.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texformat.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\drawpix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texcompress_fxt1.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\api_arrayelt.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texfetch.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\blend.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texgen.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\queryobj.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\cpuinfo.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\enums.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\colortab.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\varray.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\atifragshader.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texcompress.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\texenv.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\execmem.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\hash.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\fog.c"/>
+    <ClCompile Include="MesaLib\src\mesa\main\remap.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_matrix.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_vector.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_debug_clip.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_debug_xform.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_xform.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_eval.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_debug_norm.c"/>
+    <ClCompile Include="MesaLib\src\mesa\math\m_translate.c"/>
+    <ClCompile Include="MesaLib\src\mapi\mapi\u_execmem.c"/>
+    <ClCompile Include="MesaLib\src\mapi\mapi\u_thread.c"/>
+    <ClCompile Include="MesaLib\src\mapi\mapi\u_current.c"/>
+    <ClCompile Include="MesaLib\src\mapi\glapi\glapi_nop.c"/>
+    <ClCompile Include="MesaLib\src\mapi\glapi\glapi_dispatch.c"/>
+    <ClCompile Include="MesaLib\src\mapi\glapi\glapi_entrypoint.c"/>
+    <ClCompile Include="MesaLib\src\mapi\glapi\glapi_getproc.c"/>
+    <ClCompile Include="..\talloc\talloc.c"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="mesa_headers.vcxproj">
+      <Project>{B7F38AFF-0CFF-507F-CA50-07962B52C5A7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

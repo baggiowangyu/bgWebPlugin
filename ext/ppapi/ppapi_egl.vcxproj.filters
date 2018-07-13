@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl">
+      <UniqueIdentifier>{71BB4E41-219D-601E-ACE4-FEA008E71300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mesa">
+      <UniqueIdentifier>{CFA412D8-4E40-8543-F18F-7DDC0AFDA9BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mesa\MesaLib">
+      <UniqueIdentifier>{28D4FFDE-D5B0-0168-E2C6-805D1BC9FAEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mesa\MesaLib\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mesa\MesaLib\src\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\mesa\MesaLib\src\egl\main">
+      <UniqueIdentifier>{4ECC9921-7D4B-15DC-E268-546157B2659F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi.gyp"/>
+    <ClCompile Include="lib\gl\egl\egldriver.c">
+      <Filter>lib\gl\egl</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gl\egl\egldriver_ppapi.c">
+      <Filter>lib\gl\egl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglapi.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglmutex.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglapi.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglsurface.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglsurface.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglimage.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\egllog.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglcompiler.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\egltypedefs.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglimage.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\egllog.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglstring.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglglobals.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglglobals.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglstring.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglmisc.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglarray.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\egldriver.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\egldisplay.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\egldefines.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglarray.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglmisc.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\egldisplay.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglscreen.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglcontext.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglmode.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglcontext.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglscreen.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglmode.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglcurrent.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglsync.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglsync.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglcurrent.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+    <ClInclude Include="..\third_party\mesa\MesaLib\src\egl\main\eglconfig.h">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClInclude>
+    <ClCompile Include="..\third_party\mesa\MesaLib\src\egl\main\eglconfig.c">
+      <Filter>..\third_party\mesa\MesaLib\src\egl\main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

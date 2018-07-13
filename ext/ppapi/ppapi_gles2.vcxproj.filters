@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl">
+      <UniqueIdentifier>{71BB4E41-219D-601E-ACE4-FEA008E71300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl\gles2">
+      <UniqueIdentifier>{DA6713B1-3B5B-AD16-6122-1B234DFDCC52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi.gyp"/>
+    <ClCompile Include="lib\gl\gles2\gles2.c">
+      <Filter>lib\gl\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gl\gles2\gl2ext_ppapi.c">
+      <Filter>lib\gl\gles2</Filter>
+    </ClCompile>
+    <ClInclude Include="lib\gl\gles2\gl2ext_ppapi.h">
+      <Filter>lib\gl\gles2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tests">
+      <UniqueIdentifier>{71685B5B-5DB1-D3F0-6DF4-FE19B5454C87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\test_url_loader_data">
+      <UniqueIdentifier>{6F607B97-776C-B87C-C7D7-1EF104363ED2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl">
+      <UniqueIdentifier>{71BB4E41-219D-601E-ACE4-FEA008E71300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl\gles2">
+      <UniqueIdentifier>{DA6713B1-3B5B-AD16-6122-1B234DFDCC52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClInclude Include="tests\test_flash_file.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_var.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_url_util.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <None Include="tests\ppapi_nacl_tests_newlib.nmf">
+      <Filter>tests</Filter>
+    </None>
+    <ClInclude Include="tests\test_network_monitor_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_char_set.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_video_decoder.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_core.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_buffer.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_input_event.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_post_message.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <None Include="tests\test_page.css">
+      <Filter>tests</Filter>
+    </None>
+    <ClInclude Include="tests\test_flash_message_loop.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_udp_socket_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_network_monitor_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_file_system.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_host_resolver_private_disallowed.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_console.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_uma.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_core.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_var_deprecated.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_view.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_char_set.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_mouse_lock.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_host_resolver_private_disallowed.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_audio.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_tcp_socket_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_x509_certificate_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_case.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_audio_config.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_tcp_socket_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_scrollbar.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_truetype_font.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_file_ref.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_flash_message_loop.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_case.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_empty.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_graphics_2d.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_tcp_socket_private_trusted.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_uma.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_tcp_server_socket_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_cursor_control.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <None Include="tests\test_case.html">
+      <Filter>tests</Filter>
+    </None>
+    <ClCompile Include="tests\test_file_io.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_utils.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_resource_array.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_scrollbar.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_flash_fullscreen.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_flash_fullscreen.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_websocket.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_memory.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_directory_reader.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_utils.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_message_loop.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_image_data.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_crypto.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_talk_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_c_includes.c">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\arch_dependent_sizes_64.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <None Include="tests\test_case.html.mock-http-headers">
+      <Filter>tests</Filter>
+    </None>
+    <ClCompile Include="tests\test_tcp_server_socket_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_view.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_cursor_control.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_file_ref.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_flash.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_websocket.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_flash.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_mouse_cursor.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_url_request.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_var_deprecated.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_ime_input_event.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_mouse_lock.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_fullscreen.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_crypto.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_pdf.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_truetype_font.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_paint_aggregator.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_post_message.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_paint_aggregator.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_empty.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\arch_dependent_sizes_32.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_memory.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_flash_clipboard.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_url_request.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_printing.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_graphics_3d.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_url_loader.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_fullscreen.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_image_data.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_message_loop.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_instance_deprecated.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_net_address_private_untrusted.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_browser_font.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\testing_instance.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_audio.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\all_c_includes.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_var.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_broker.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_instance_deprecated.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\pp_thread.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_mouse_cursor.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_flash_device_id.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_directory_reader.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_console.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_url_loader.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_host_resolver_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_file_system.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_udp_socket_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\testing_instance.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_buffer.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_flash_file.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_struct_sizes.c">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_video_decoder.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_url_util.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_net_address_private_untrusted.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_file_io.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_host_resolver_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_pdf.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_broker.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_resource_array.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_browser_font.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_ime_input_event.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_graphics_2d.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_graphics_3d.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_flash_device_id.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_flash_clipboard.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_audio_config.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\all_cpp_includes.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_input_event.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_talk_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_net_address_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_net_address_private.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_x509_certificate_private.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_printing.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_tcp_socket_private_trusted.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_cpp_includes.cc">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <None Include="tests\test_url_loader_data\hello.txt">
+      <Filter>tests\test_url_loader_data</Filter>
+    </None>
+    <ClCompile Include="lib\gl\gles2\gles2.c">
+      <Filter>lib\gl\gles2</Filter>
+    </ClCompile>
+    <ClInclude Include="lib\gl\gles2\gl2ext_ppapi.h">
+      <Filter>lib\gl\gles2</Filter>
+    </ClInclude>
+    <ClCompile Include="lib\gl\gles2\gl2ext_ppapi.c">
+      <Filter>lib\gl\gles2</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

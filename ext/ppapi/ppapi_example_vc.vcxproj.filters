@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{44436D1D-970F-7E02-EDA1-3A8DAD062A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\video_capture">
+      <UniqueIdentifier>{4B7FF314-53CA-0BFA-87CB-AF5356840C7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClCompile Include="examples\video_capture\video_capture.cc">
+      <Filter>examples\video_capture</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

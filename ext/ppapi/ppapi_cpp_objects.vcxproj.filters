@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\trusted">
+      <UniqueIdentifier>{DC54381C-F628-7AE8-11CB-1E14F0C26616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions">
+      <UniqueIdentifier>{76083E2D-7590-88DA-EC98-B85C08DD3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\threading">
+      <UniqueIdentifier>{08E84E43-86EA-0FF0-2578-3ED14D870CD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\websocket">
+      <UniqueIdentifier>{0D9036D0-582B-33F9-A410-7AD8050BEE39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\graphics">
+      <UniqueIdentifier>{B2A6AACF-46C0-13A9-176C-59F376D7CA47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi.gyp"/>
+    <ClInclude Include="cpp\mouse_cursor.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\core.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\array_output.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\fullscreen.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\image_data.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\completion_callback.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\instance_handle.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\rect.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\input_event.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\size.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\array_output.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\url_loader.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\graphics_2d.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\graphics_3d_client.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\resource.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\url_request_info.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\mouse_lock.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\fullscreen.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\graphics_2d.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\instance.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\url_response_info.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\url_request_info.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\resource.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_system.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\module.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\input_event.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\websocket.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\output_traits.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\point.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_ref.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\file_io.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\audio.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\file_system.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\touch_point.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var_array_buffer.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\audio_config.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\core.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\view.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\logging.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\message_loop.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\view.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\graphics_3d.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\mouse_cursor.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\instance_handle.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\module.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\audio_config.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\websocket.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\instance.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\graphics_3d.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\graphics_3d_client.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\url_loader.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\mouse_lock.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\rect.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\var_array_buffer.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\audio.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\var.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\module_impl.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_io.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\image_data.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\message_loop.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\file_ref.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\url_response_info.cc">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\trusted\file_io_trusted.cc">
+      <Filter>cpp\trusted</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\trusted\browser_font_trusted.h">
+      <Filter>cpp\trusted</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\trusted\file_chooser_trusted.h">
+      <Filter>cpp\trusted</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\trusted\file_chooser_trusted.cc">
+      <Filter>cpp\trusted</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\trusted\file_io_trusted.h">
+      <Filter>cpp\trusted</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\trusted\browser_font_trusted.cc">
+      <Filter>cpp\trusted</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\extensions\event_base.cc">
+      <Filter>cpp\extensions</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\extensions\event_base.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\to_var_converter.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dict_field.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\from_var_converter.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\ext_output_traits.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\optional.h">
+      <Filter>cpp\extensions</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\extensions\dev\socket_dev.cc">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\extensions\dev\alarms_dev.cc">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\extensions\dev\events_dev.h">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dev\alarms_dev.h">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dev\socket_dev.h">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\extensions\dev\events_dev.cc">
+      <Filter>cpp\extensions\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\flash_clipboard.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\flash_message_loop.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\instance_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\video_frame_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\network_list_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\flash_fullscreen.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\content_decryptor_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\flash_font_file.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\flash_menu.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\flash_font_file.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\flash_device_id.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\pdf.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\tcp_server_socket_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\video_destination_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\udp_socket_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\tcp_socket_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\network_monitor_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\host_resolver_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\video_source_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\flash_device_id.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\file_io_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\flash_fullscreen.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\flash_file.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\video_source_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\flash_menu.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\udp_socket_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\video_destination_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\flash.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\file_io_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\pdf.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\var_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\content_decryptor_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\network_monitor_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\flash_message_loop.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\host_resolver_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\instance_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\video_frame_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\var_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\pass_file_handle.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\tcp_server_socket_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\flash.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\network_list_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\net_address_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\flash_clipboard.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\x509_certificate_private.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\x509_certificate_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\pass_file_handle.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\private\net_address_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\private\tcp_socket_private.cc">
+      <Filter>cpp\private</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\private\flash_file.h">
+      <Filter>cpp\private</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_dictionary_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\directory_reader_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\audio_input_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\memory_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\video_capture_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\crypto_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\video_decoder_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\device_ref_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\file_chooser_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\device_ref_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\zoom_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\video_decoder_client_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\scrollbar_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\directory_entry_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\cursor_control_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\view_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\find_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\widget_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\buffer_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\scriptable_object_deprecated.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\widget_client_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\truetype_font_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\video_capture_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\file_chooser_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\video_decoder_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\graphics_2d_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\truetype_font_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\cursor_control_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\font_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\scriptable_object_deprecated.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\scrollbar_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_array_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\text_input_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\url_util_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\var_array_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\selection_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\buffer_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\audio_input_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\widget_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\view_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\directory_entry_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\resource_array_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\var_dictionary_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\video_capture_client_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\ime_input_event_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\zoom_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\url_util_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\directory_reader_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\text_input_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\video_decoder_client_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\font_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\printing_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\ime_input_event_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\resource_array_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\crypto_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\find_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\graphics_2d_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClCompile Include="cpp\dev\memory_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\video_capture_client_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\dev\widget_client_dev.cc">
+      <Filter>cpp\dev</Filter>
+    </ClCompile>
+    <ClInclude Include="cpp\dev\selection_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\printing_dev.h">
+      <Filter>cpp\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory_thread_traits.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\threading\lock.h">
+      <Filter>utility\threading</Filter>
+    </ClInclude>
+    <ClCompile Include="utility\threading\lock.cc">
+      <Filter>utility\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\threading\simple_thread.cc">
+      <Filter>utility\threading</Filter>
+    </ClCompile>
+    <ClInclude Include="utility\threading\simple_thread.h">
+      <Filter>utility\threading</Filter>
+    </ClInclude>
+    <ClCompile Include="utility\websocket\websocket_api.cc">
+      <Filter>utility\websocket</Filter>
+    </ClCompile>
+    <ClInclude Include="utility\websocket\websocket_api.h">
+      <Filter>utility\websocket</Filter>
+    </ClInclude>
+    <ClCompile Include="utility\private\network_list_observer_private.cc">
+      <Filter>utility\private</Filter>
+    </ClCompile>
+    <ClInclude Include="utility\private\network_list_observer_private.h">
+      <Filter>utility\private</Filter>
+    </ClInclude>
+    <ClCompile Include="utility\graphics\paint_manager.cc">
+      <Filter>utility\graphics</Filter>
+    </ClCompile>
+    <ClInclude Include="utility\graphics\paint_manager.h">
+      <Filter>utility\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\graphics\paint_aggregator.h">
+      <Filter>utility\graphics</Filter>
+    </ClInclude>
+    <ClCompile Include="utility\graphics\paint_aggregator.cc">
+      <Filter>utility\graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

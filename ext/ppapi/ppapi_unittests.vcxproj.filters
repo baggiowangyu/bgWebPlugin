@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="host">
+      <UniqueIdentifier>{D877ED5D-5BA8-20DA-F98B-FABAACD9EF89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{DB8B4CC8-9E72-B499-B612-B1CD65A064EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_impl">
+      <UniqueIdentifier>{31487526-3BCF-307C-F310-7A0D21E9E0D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClCompile Include="host\resource_message_filter_unittest.cc">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_instance_private_proxy_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_var_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\file_chooser_resource_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_var_tracker_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_dispatcher_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\printing_resource_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\raw_var_data_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\pdf_resource_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\run_all_unittests.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_resource_tracker_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\websocket_resource_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\mock_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\mock_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_messaging_proxy_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\serialized_var_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_instance_proxy_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_resource_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\device_enumeration_resource_helper_unittest.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\var_value_conversions_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\thread_aware_callback_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\var_tracker_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\time_conversion_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\resource_tracker_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_impl\tracked_callback_unittest.cc">
+      <Filter>shared_impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

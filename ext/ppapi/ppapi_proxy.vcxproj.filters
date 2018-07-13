@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{DB8B4CC8-9E72-B499-B612-B1CD65A064EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_internal.gyp"/>
+    <ClInclude Include="cpp\completion_callback.h">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_object_var.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\file_chooser_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_message_loop_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_array_buffer_var.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\proxy_object_var.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\talk_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_graphics_3d_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppapi_command_buffer_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\browser_font_resource_trusted.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_core_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\url_response_info_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\host_var_serialization_rules.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_graphics_3d_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_file_ref_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\file_system_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_clipboard_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_input_event_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_file_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_video_decoder_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\device_enumeration_resource_helper.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\locking_resource_releaser.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_globals.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\interface_list.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_printing_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\device_enumeration_resource_helper.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_mouse_lock_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_core_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_device_id_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_messaging_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_messaging_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppapi_param_traits.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\handle_converter.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\gamepad_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_var_tracker.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\directory_reader_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_structs.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_array_buffer_var.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\url_request_info_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\graphics_2d_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\browser_font_singleton_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\websocket_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\file_chooser_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_url_loader_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\broker_dispatcher.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_resource_tracker.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\host_resolver_private_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\serialized_flash_menu.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_handle.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\directory_reader_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\truetype_font_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\graphics_2d_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\serialized_structs.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_audio_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\broker_dispatcher.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_var_tracker.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\browser_font_resource_trusted.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\audio_input_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\proxy_module.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_var_serialization_rules.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_instance_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_clipboard_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_class_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_testing_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_fullscreen_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\flash_menu_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\broker_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\resource_message_params.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\resource_message_params.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\interface_list.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\pdf_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\dispatcher.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\file_io_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\file_system_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_instance_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_buffer_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_var_deprecated_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_resource_tracker.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppapi_message_utils.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\extensions_common_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\gamepad_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_menu_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_x509_certificate_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\enter_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_x509_certificate_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\raw_var_data.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_array_output.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_network_monitor_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_instance_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_instance_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_fullscreen_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_module.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_audio_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_broker_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_file_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\pdf_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\dispatcher.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_content_decryptor_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_message_loop_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\video_capture_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_network_monitor_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\truetype_font_singleton_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_video_decoder_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\broker_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_instance_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_class_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_video_decoder_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\resource_creation_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\host_var_serialization_rules.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_dispatcher.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_image_data_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_buffer_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_device_id_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_broker_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_message_filter.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_graphics_3d_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\printing_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\truetype_font_singleton_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppapi_messages.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_instance_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\var_serialization_rules.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_text_input_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\host_dispatcher.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_image_data_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\video_capture_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppapi_param_traits.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\interface_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\serialized_var.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_content_decryptor_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\serialized_handle.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\resource_creation_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_tcp_socket_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_mouse_lock_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_array_output.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_dispatcher.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_video_decoder_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_url_loader_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_flash_message_loop_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\proxy_channel.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\connection.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_file_ref_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_globals.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\raw_var_data.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_testing_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\talk_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_message_filter.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\handle_converter.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_flash_menu.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\url_request_info_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_var_serialization_rules.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_tcp_server_socket_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_input_event_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\audio_input_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\extensions_common_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\websocket_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\flash_font_file_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\host_dispatcher.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\proxy_completion_callback_factory.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\interface_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_graphics_3d_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\truetype_font_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\file_io_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\udp_socket_private_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\udp_socket_private_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\browser_font_singleton_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_var_deprecated_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_flash_message_loop_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_printing_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_text_input_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_tcp_socket_private_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\printing_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppapi_command_buffer_proxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\serialized_var.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\url_response_info_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppapi_messages.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_tcp_server_socket_private_proxy.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_font_file_resource.cc">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\host_resolver_private_resource.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_channel.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_main_nacl.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="utility\completion_callback_factory.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

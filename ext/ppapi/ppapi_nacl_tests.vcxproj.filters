@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{71685B5B-5DB1-D3F0-6DF4-FE19B5454C87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl">
+      <UniqueIdentifier>{71BB4E41-219D-601E-ACE4-FEA008E71300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl\gles2">
+      <UniqueIdentifier>{DA6713B1-3B5B-AD16-6122-1B234DFDCC52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gl\gles2\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\build\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c">
+      <UniqueIdentifier>{CAE7F8DA-E845-16F7-E8EA-8DBDBBC6BC28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\private\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions">
+      <UniqueIdentifier>{76083E2D-7590-88DA-EC98-B85C08DD3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\trusted">
+      <UniqueIdentifier>{DC54381C-F628-7AE8-11CB-1E14F0C26616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\trusted\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_glibc">
+      <UniqueIdentifier>{C360A817-81D7-7CD2-95DC-3E58C28DDF4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_glibc\lib64">
+      <UniqueIdentifier>{8CCC2406-A2F8-00B5-70BF-8CFF85844E3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_glibc\lib64\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_glibc\lib32">
+      <UniqueIdentifier>{BB8D96DA-E2BF-B23E-A51F-BC132D2BAE80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_glibc\lib32\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_newlib">
+      <UniqueIdentifier>{180F6F27-3E6F-53CC-BE30-51052317BC53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_newlib\lib64">
+      <UniqueIdentifier>{8CCC2406-A2F8-00B5-70BF-8CFF85844E3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_newlib\lib64\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_newlib\lib32">
+      <UniqueIdentifier>{BB8D96DA-E2BF-B23E-A51F-BC132D2BAE80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\tc_newlib\lib32\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk">
+      <UniqueIdentifier>{300B0F0A-ACAD-6063-4C44-1B7D00C8E13F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain">
+      <UniqueIdentifier>{A1380BF2-B2E4-A638-7882-599BD9BAE887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib">
+      <UniqueIdentifier>{F379E9B9-88A3-FDFC-0222-7C732E6A9304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_glibc">
+      <UniqueIdentifier>{3F726652-F365-3DA5-A953-B7D280806287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_glibc\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_pnacl">
+      <UniqueIdentifier>{8647CA1C-790C-CB23-C5A9-1AE303238472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_pnacl\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)">
+      <UniqueIdentifier>{ECA95933-7FA6-5798-4EC4-C0CAC6DD34DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions">
+      <UniqueIdentifier>{76083E2D-7590-88DA-EC98-B85C08DD3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\private\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\threading">
+      <UniqueIdentifier>{08E84E43-86EA-0FF0-2578-3ED14D870CD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\threading\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\websocket">
+      <UniqueIdentifier>{0D9036D0-582B-33F9-A410-7AD8050BEE39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\websocket\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\private\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\graphics">
+      <UniqueIdentifier>{B2A6AACF-46C0-13A9-176C-59F376D7CA47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\graphics\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_untrusted.gyp"/>
+    <None Include="glibc-x86-64.ppapi_nacl_tests.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <None Include="newlib-x86-64.ppapi_nacl_tests.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <None Include="glibc-x86-32.ppapi_nacl_tests.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <None Include="pnacl_newlib.ppapi_nacl_tests.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <None Include="newlib-x86-32.ppapi_nacl_tests.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <ClCompile Include="tests\test_core.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_core.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_mouse_lock.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_case.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_file_io.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_tcp_socket_private_disallowed.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_empty.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_scrollbar.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_memory.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_file_ref.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_mouse_lock.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_paint_aggregator.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\arch_dependent_sizes_32.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_memory.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_audio.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\arch_dependent_sizes_64.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\pp_thread.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_url_loader.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\testing_instance.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_file_io.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_graphics_2d.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\all_cpp_includes.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_graphics_3d.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_tcp_socket_private.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_file_system.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_host_resolver_private_disallowed.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_console.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_view.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_host_resolver_private_disallowed.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_audio.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_tcp_server_socket_private_disallowed.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_utils.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_udp_socket_private_disallowed.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_c_includes.c">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_view.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_cursor_control.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_mouse_cursor.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_post_message.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_host_resolver_private.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_tcp_socket_private_disallowed.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_net_address_private_untrusted.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\testing_instance.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_tcp_server_socket_private_disallowed.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_printing.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_directory_reader.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_tcp_server_socket_private.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_printing.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_struct_sizes.c">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_graphics_2d.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_audio_config.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_input_event.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_udp_socket_private.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_var.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_post_message.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_tcp_socket_private.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_truetype_font.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_case.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_udp_socket_private_disallowed.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_websocket.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_message_loop.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_tcp_server_socket_private.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_websocket.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_mouse_cursor.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_empty.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_fullscreen.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_network_monitor_private.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_file_system.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_console.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_audio_config.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_net_address_private_untrusted.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_host_resolver_private.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_ime_input_event.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\all_c_includes.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_scrollbar.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_udp_socket_private.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_network_monitor_private.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_directory_reader.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_utils.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_image_data.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_paint_aggregator.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_input_event.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_url_request.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_ime_input_event.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_fullscreen.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_truetype_font.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_url_request.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_graphics_3d.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\test_image_data.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_message_loop.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="tests\test_url_loader.h">
+      <Filter>tests\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="tests\test_file_ref.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_var.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_cursor_control.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\test_cpp_includes.cc">
+      <Filter>tests\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gl\gles2\gl2ext_ppapi.c">
+      <Filter>lib\gl\gles2\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="lib\gl\gles2\gl2ext_ppapi.h">
+      <Filter>lib\gl\gles2\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="lib\gl\gles2\gles2.c">
+      <Filter>lib\gl\gles2\_excluded_files</Filter>
+    </ClCompile>
+    <None Include="..\native_client\build\build_nexe.py">
+      <Filter>..\native_client\build\_excluded_files</Filter>
+    </None>
+    <ClInclude Include="c\ppp_mouse_lock.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_request_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_fullscreen.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_system.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_module.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_websocket.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_rect.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_io.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_macros.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_completion_callback.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_time.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_mouse_cursor.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_input_event.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_var_array_buffer.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_opengles2.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_input_event.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_image_data.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_console.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_errors.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_loader.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_messaging.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_bool.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_mouse_lock.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_array_output.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_input_event.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_resource.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_ref.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_var.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_gamepad.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_messaging.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_audio.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_touch_point.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_point.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_size.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_response_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_var.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_graphics_2d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_file_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_core.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_stdint.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_audio_config.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_x509_certificate_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_pdf.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_private_font_charset.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_file_handle.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_nacl_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_instance_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_file_io_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_host_resolver_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_uma_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_tcp_server_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_content_decryptor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_menu.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_video_destination_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_gpu_blacklist_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_content_decryptor.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_video_source_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppp_content_decryptor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_tcp_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_proxy_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_network_monitor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppp_instance_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_net_address_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_udp_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_video_frame_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_clipboard.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_font_file.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_network_list_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_message_loop.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_alarms_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_socket_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_events_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_audio_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_file_io_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_url_loader_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_browser_font_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_graphics_3d_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_image_data_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_truetype_font_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_testing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_cursor_control_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_cursor_type_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_resource_array_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_print_settings_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_zoom_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_array_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_memory_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_scrollbar_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_widget_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_char_set_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_widget_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_find_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_printing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_opengles2ext_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_directory_reader_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_printing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_graphics_2d_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_video_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_zoom_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_selection_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_ime_input_event_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_text_input_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_deprecated.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_crypto_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_view_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_url_util_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_scrollbar_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_class_deprecated.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_video_decoder_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_file_chooser_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_buffer_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_device_ref_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_find_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_trace_event_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_text_input_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_dictionary_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_font_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\deprecated_bool.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_video_decoder_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <None Include="$(OutDir)obj\global_intermediate\tc_glibc\lib64\libppapi_cpp.so">
+      <Filter>$(OutDir)obj\global_intermediate\tc_glibc\lib64\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_glibc\lib64\libppapi.so">
+      <Filter>$(OutDir)obj\global_intermediate\tc_glibc\lib64\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_glibc\lib32\libppapi_cpp.so">
+      <Filter>$(OutDir)obj\global_intermediate\tc_glibc\lib32\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_glibc\lib32\libppapi.so">
+      <Filter>$(OutDir)obj\global_intermediate\tc_glibc\lib32\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_newlib\lib64\libppapi.a">
+      <Filter>$(OutDir)obj\global_intermediate\tc_newlib\lib64\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_newlib\lib64\libppapi_cpp.a">
+      <Filter>$(OutDir)obj\global_intermediate\tc_newlib\lib64\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_newlib\lib32\libppapi_cpp.a">
+      <Filter>$(OutDir)obj\global_intermediate\tc_newlib\lib32\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\tc_newlib\lib32\libppapi.a">
+      <Filter>$(OutDir)obj\global_intermediate\tc_newlib\lib32\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\stamp.prep">
+      <Filter>$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_glibc\stamp.prep">
+      <Filter>$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_glibc\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_pnacl\stamp.prep">
+      <Filter>$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_pnacl\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)\ppapi_nacl_tests_pnacl_newlib_x32.nexe">
+      <Filter>$(OutDir)\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)\ppapi_nacl_tests_glibc_x64.nexe">
+      <Filter>$(OutDir)\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)\ppapi_nacl_tests_glibc_x32.nexe">
+      <Filter>$(OutDir)\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)\ppapi_nacl_tests_newlib.pexe">
+      <Filter>$(OutDir)\_excluded_files</Filter>
+    </None>
+    <None Include="$(OutDir)\ppapi_nacl_tests_pnacl_newlib_x64.nexe">
+      <Filter>$(OutDir)\_excluded_files</Filter>
+    </None>
+    <ClInclude Include="cpp\core.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\graphics_2d.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_ref.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\url_loader.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\module_impl.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\message_loop.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\graphics_3d.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\pass_ref.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\image_data.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\instance.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\url_response_info.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\view.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\touch_point.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\graphics_3d_client.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\array_output.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\rect.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\resource.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\output_traits.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_io.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\instance_handle.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_system.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\fullscreen.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\completion_callback.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\size.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\module.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\input_event.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\websocket.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\point.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\audio.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\url_request_info.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\mouse_lock.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\audio_config.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var_array_buffer.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\logging.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\ext_output_traits.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\from_var_converter.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\to_var_converter.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dict_field.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\event_base.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\optional.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dev\socket_dev.h">
+      <Filter>cpp\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\dev\alarms_dev.h">
+      <Filter>cpp\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\video_frame_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\tcp_server_socket_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\instance_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\network_list_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\flash_font_file.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\host_resolver_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\flash_fullscreen.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\udp_socket_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\pass_file_handle.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\content_decryptor_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\video_destination_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\tcp_socket_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\video_source_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\file_io_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\network_monitor_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\var_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\net_address_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\private\x509_certificate_private.h">
+      <Filter>cpp\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_dictionary_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\device_ref_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\selection_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\scriptable_object_deprecated.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\text_input_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\font_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\widget_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\printing_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\directory_entry_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\video_decoder_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\truetype_font_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\widget_client_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\view_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\ime_input_event_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\resource_array_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\graphics_2d_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\directory_reader_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\memory_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\zoom_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_array_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\file_chooser_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\buffer_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\scrollbar_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\url_util_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\find_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory.h">
+      <Filter>utility\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory_thread_traits.h">
+      <Filter>utility\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\threading\lock.h">
+      <Filter>utility\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\threading\simple_thread.h">
+      <Filter>utility\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\websocket\websocket_api.h">
+      <Filter>utility\websocket\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\private\network_list_observer_private.h">
+      <Filter>utility\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\graphics\paint_aggregator.h">
+      <Filter>utility\graphics\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\graphics\paint_manager.h">
+      <Filter>utility\graphics\_excluded_files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

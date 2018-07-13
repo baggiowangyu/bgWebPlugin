@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="arch_x86">
+      <UniqueIdentifier>{3F708841-B117-782F-C43F-A077DBB93F7B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="service_runtime.cc"/>
+    <ClCompile Include="temporary_file.cc"/>
+    <ClCompile Include="pnacl_resources.cc"/>
+    <ClCompile Include="file_downloader.cc"/>
+    <ClCompile Include="module_ppapi.cc"/>
+    <None Include="plugin.gyp"/>
+    <ClCompile Include="sel_ldr_launcher_chrome.cc"/>
+    <ClCompile Include="utility.cc"/>
+    <ClCompile Include="pnacl_options.cc"/>
+    <ClCompile Include="json_manifest.cc"/>
+    <ClCompile Include="plugin.cc"/>
+    <ClCompile Include="pnacl_coordinator.cc"/>
+    <ClCompile Include="scriptable_plugin.cc"/>
+    <ClCompile Include="pnacl_translate_thread.cc"/>
+    <ClCompile Include="nacl_subprocess.cc"/>
+    <ClCompile Include="srpc_params.cc"/>
+    <ClCompile Include="local_temp_file.cc"/>
+    <ClCompile Include="srpc_client.cc"/>
+    <ClCompile Include="arch_x86\sandbox_isa.cc">
+      <Filter>arch_x86</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

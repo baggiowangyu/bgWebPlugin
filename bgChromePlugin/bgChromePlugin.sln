@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bgChromePlugin", "bgChromePlugin\bgChromePlugin.vcxproj", "{2BC321DB-75D3-4194-A118-9ACC40BD7C0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{AEF62C18-41AC-47AB-A843-CECCD80453E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gles2", "gles2\gles2.vcxproj", "{396A2B43-659B-413B-81B4-15156A5739BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BC321DB-75D3-4194-A118-9ACC40BD7C0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BC321DB-75D3-4194-A118-9ACC40BD7C0F}.Debug|Win32.Build.0 = Debug|Win32
+		{2BC321DB-75D3-4194-A118-9ACC40BD7C0F}.Release|Win32.ActiveCfg = Release|Win32
+		{2BC321DB-75D3-4194-A118-9ACC40BD7C0F}.Release|Win32.Build.0 = Release|Win32
+		{396A2B43-659B-413B-81B4-15156A5739BE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{396A2B43-659B-413B-81B4-15156A5739BE}.Debug|Win32.Build.0 = Debug|Win32
+		{396A2B43-659B-413B-81B4-15156A5739BE}.Release|Win32.ActiveCfg = Release|Win32
+		{396A2B43-659B-413B-81B4-15156A5739BE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{396A2B43-659B-413B-81B4-15156A5739BE} = {AEF62C18-41AC-47AB-A843-CECCD80453E9}
+	EndGlobalSection
+EndGlobal

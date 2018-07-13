@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\shared">
+      <UniqueIdentifier>{20D50607-EB73-BC01-11AE-A2B6030BB0A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\shared\ppapi_proxy">
+      <UniqueIdentifier>{9339A0B9-47AA-DAA3-D7D6-8325564CD5EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\untrusted">
+      <UniqueIdentifier>{BBB9D80A-E652-9539-C3FD-598318347D15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\untrusted\irt_stub">
+      <UniqueIdentifier>{C37A6451-0730-7E25-DA35-8DFA41BBCA27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\trusted">
+      <UniqueIdentifier>{DC54381C-F628-7AE8-11CB-1E14F0C26616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\trusted\weak_ref">
+      <UniqueIdentifier>{5D8B8CD1-EBCE-B53E-FC75-805DD0F26CEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="native_client.gyp"/>
+    <ClInclude Include="src\shared\ppapi_proxy\ppruntime.h">
+      <Filter>src\shared\ppapi_proxy</Filter>
+    </ClInclude>
+    <None Include="src\untrusted\irt_stub\libppapi.so">
+      <Filter>src\untrusted\irt_stub</Filter>
+    </None>
+    <None Include="src\untrusted\irt_stub\libppapi.a">
+      <Filter>src\untrusted\irt_stub</Filter>
+    </None>
+    <ClInclude Include="src\trusted\weak_ref\call_on_main_thread.h">
+      <Filter>src\trusted\weak_ref</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

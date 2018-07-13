@@ -1,0 +1,2765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c">
+      <UniqueIdentifier>{CAE7F8DA-E845-16F7-E8EA-8DBDBBC6BC28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions">
+      <UniqueIdentifier>{76083E2D-7590-88DA-EC98-B85C08DD3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\extensions\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\trusted">
+      <UniqueIdentifier>{DC54381C-F628-7AE8-11CB-1E14F0C26616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\trusted\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="c\private\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\webkit">
+      <UniqueIdentifier>{6BB4ACEE-077E-03F4-A9A9-4276B7FD2E30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\webkit\glue">
+      <UniqueIdentifier>{9C0EBFC5-0C0B-8A11-B834-3199D9447A2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\webkit\glue\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ipc">
+      <UniqueIdentifier>{38610226-4B1E-4F86-5BBF-DB66C466E49B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ipc\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\third_party\valgrind">
+      <UniqueIdentifier>{4D45BC00-4524-CC11-7C8B-CB6BE0B169B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\third_party\valgrind\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\untrusted">
+      <UniqueIdentifier>{BBB9D80A-E652-9539-C3FD-598318347D15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\untrusted\irt">
+      <UniqueIdentifier>{A2A8B9E2-2F6E-B233-E163-FA478022353B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\untrusted\irt\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\include\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\include\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\include\win\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted">
+      <UniqueIdentifier>{DC54381C-F628-7AE8-11CB-1E14F0C26616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime">
+      <UniqueIdentifier>{D35CA2CF-2ADE-489F-A9C7-3469BF43BA6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime\include\machine">
+      <UniqueIdentifier>{CC2C6878-8228-CF1E-D925-708815FA26B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime\include\machine\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime\include\bits">
+      <UniqueIdentifier>{B0F03FF3-930A-1AFF-7033-8DC5186B597C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\trusted\service_runtime\include\bits\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\shared">
+      <UniqueIdentifier>{20D50607-EB73-BC01-11AE-A2B6030BB0A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\shared\srpc">
+      <UniqueIdentifier>{7473AFFC-C5A1-73AD-7EBE-9C56ECC7BF88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\src\shared\srpc\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native_client\build\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit">
+      <UniqueIdentifier>{1919EB75-19A6-2BAD-ABB0-47BF57C87A0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source">
+      <UniqueIdentifier>{26D65320-41C3-1A61-26C0-583D658C7F16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\WebKit">
+      <UniqueIdentifier>{1919EB75-19A6-2BAD-ABB0-47BF57C87A0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\WebKit\chromium">
+      <UniqueIdentifier>{A235D2A4-63B6-DD4D-7F7F-D3EA248BB602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\WebKit\chromium\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\WebKit\chromium\public\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\Platform">
+      <UniqueIdentifier>{7530914F-F884-B527-0110-1E9CDEF9352C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\Platform\chromium">
+      <UniqueIdentifier>{A235D2A4-63B6-DD4D-7F7F-D3EA248BB602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\Platform\chromium\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\skia">
+      <UniqueIdentifier>{426FFB3D-87DA-BE1E-9819-8EDBC6A5D70A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\skia\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\skia\include\core">
+      <UniqueIdentifier>{16178836-FF57-2363-AA2B-8BAC1DC00026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\skia\include\core\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu">
+      <UniqueIdentifier>{16A1A08C-CD62-E501-A8C7-8BB00F1B8E2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public">
+      <UniqueIdentifier>{0D2511BD-044F-C35F-ECCE-845899961E41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\i18n">
+      <UniqueIdentifier>{366E8577-6226-B711-6772-2EA2AF5F5D10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\i18n\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\i18n\unicode\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\common\unicode">
+      <UniqueIdentifier>{6632E6AC-350C-E2A2-6DEF-55B5B19FE666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\third_party\icu\public\common\unicode\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\media">
+      <UniqueIdentifier>{2699B576-DA2C-16EE-9C4A-F0CAB500D719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\media\audio">
+      <UniqueIdentifier>{D4AF4849-65C6-75FE-2B6E-F6BD18C08214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\media\audio\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\media\base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\media\base\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\testing">
+      <UniqueIdentifier>{681E52FB-4BB5-C8E2-1D1A-B7C4F2495A5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\testing\gtest">
+      <UniqueIdentifier>{D3E6212E-43F7-7493-968E-4DFA7B30FBD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\testing\gtest\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\testing\gtest\include\gtest">
+      <UniqueIdentifier>{D3E6212E-43F7-7493-968E-4DFA7B30FBD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\testing\gtest\include\gtest\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\googleurl">
+      <UniqueIdentifier>{A0DC902D-4719-B176-D6F5-F09EBACFC896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\googleurl\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\googleurl\src\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\files">
+      <UniqueIdentifier>{BB1C967E-6CBB-1192-77C2-20F84C75AB96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\files\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\third_party\dynamic_annotations">
+      <UniqueIdentifier>{DA795632-B397-418B-92D9-F346736AEF76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\third_party\dynamic_annotations\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\win\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\profiler">
+      <UniqueIdentifier>{87097DB4-0A18-6E42-07AB-BF3B3651C11F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\profiler\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\metrics">
+      <UniqueIdentifier>{DC24B95F-2580-773E-999D-FF21A384B9AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\metrics\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\threading">
+      <UniqueIdentifier>{08E84E43-86EA-0FF0-2578-3ED14D870CD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\threading\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\mac">
+      <UniqueIdentifier>{DDBFF7CF-DBCF-B2FC-793A-DB701B563E8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\mac\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\synchronization">
+      <UniqueIdentifier>{214F8E67-7437-F20E-6191-AECBD38CDFDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\synchronization\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\posix">
+      <UniqueIdentifier>{111D2AD9-64D0-7241-0260-63641DD69CAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\posix\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\containers">
+      <UniqueIdentifier>{850CC7C6-4057-8728-DB1E-8B89B1880B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\containers\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\memory">
+      <UniqueIdentifier>{8F5DB3DB-0272-DCA1-4517-81A538CE0517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\memory\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\debug">
+      <UniqueIdentifier>{FBAE646B-1E91-2C58-956B-A42D67D8DA0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\debug\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\strings">
+      <UniqueIdentifier>{03F116E8-99FD-0D5D-3AD5-D756C88BB794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\strings\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\message_loop">
+      <UniqueIdentifier>{85BB2B48-8131-AA06-DC6D-4CCE2EF5429B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base\message_loop\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui">
+      <UniqueIdentifier>{3ED3C5AE-0459-82A6-2795-7EAB6F83FEC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\gfx">
+      <UniqueIdentifier>{C2A0659E-E135-879C-7769-386FD982C409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\gfx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base">
+      <UniqueIdentifier>{DBBAC0A6-BB0A-CA51-45CC-DA4574B671E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\x">
+      <UniqueIdentifier>{10296321-239C-F152-967B-20F84AEABE3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\x\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\keycodes">
+      <UniqueIdentifier>{12B31B02-0E42-8162-B54F-E65772B458CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\keycodes\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\events">
+      <UniqueIdentifier>{35F9EDA7-7DA5-20A8-B488-78EA975C9F74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\base\events\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\surface">
+      <UniqueIdentifier>{293C6BCE-60EA-7BEE-4568-16BEE1C5940D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\ui\surface\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\build\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\components">
+      <UniqueIdentifier>{3AFDBA04-7EE3-7E7A-3B5A-73953F62668A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\components\tracing">
+      <UniqueIdentifier>{CE08FC7C-88C2-852D-9904-CEFED4CA8C0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\components\tracing\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\skia">
+      <UniqueIdentifier>{426FFB3D-87DA-BE1E-9819-8EDBC6A5D70A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\skia\ext">
+      <UniqueIdentifier>{3EE5B703-384C-67C2-8DE0-73108365DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\skia\ext\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu">
+      <UniqueIdentifier>{52E8B949-3E67-CAB7-33D9-3F972FED789B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\ipc">
+      <UniqueIdentifier>{38610226-4B1E-4F86-5BBF-DB66C466E49B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\ipc\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\command_buffer">
+      <UniqueIdentifier>{05C7F72F-ADB0-5046-004F-DF2FFA532C5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\command_buffer\client">
+      <UniqueIdentifier>{D5E3C9B9-F4E5-9856-CE8C-F9B03683EBB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\command_buffer\client\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\command_buffer\common">
+      <UniqueIdentifier>{2F5FD094-EF52-77F7-7AA8-4327A01BF747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\gpu\command_buffer\common\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj">
+      <UniqueIdentifier>{7BD4F48B-77B4-AB58-9E24-A7302D190D1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate">
+      <UniqueIdentifier>{14CEDE64-16A7-96A9-EF19-5C5D6085FF18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk">
+      <UniqueIdentifier>{300B0F0A-ACAD-6063-4C44-1B7D00C8E13F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain">
+      <UniqueIdentifier>{A1380BF2-B2E4-A638-7882-599BD9BAE887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib">
+      <UniqueIdentifier>{F379E9B9-88A3-FDFC-0222-7C732E6A9304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thunk">
+      <UniqueIdentifier>{712F322A-268F-FC17-51EC-0F5726075714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thunk\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native_client">
+      <UniqueIdentifier>{A9537671-E7FD-2F0E-DE29-6155260B6944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native_client\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native_client\src\shared">
+      <UniqueIdentifier>{20D50607-EB73-BC01-11AE-A2B6030BB0A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native_client\src\shared\ppapi_proxy">
+      <UniqueIdentifier>{9339A0B9-47AA-DAA3-D7D6-8325564CD5EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native_client\src\shared\ppapi_proxy\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{DB8B4CC8-9E72-B499-B612-B1CD65A064EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_impl">
+      <UniqueIdentifier>{31487526-3BCF-307C-F310-7A0D21E9E0D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_impl\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_impl\private">
+      <UniqueIdentifier>{AF58C028-3D78-1FD9-82C2-3238461BAF30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_impl\private\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{9938E6E5-8F6B-7587-726E-6CE774E44BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions">
+      <UniqueIdentifier>{76083E2D-7590-88DA-EC98-B85C08DD3529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\extensions\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\dev">
+      <UniqueIdentifier>{51D92A3A-C0F8-78D6-DFF5-4F152A3AB774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\dev\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{46D3A1A1-3410-F9C8-C5F7-6AC884D4AD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\threading">
+      <UniqueIdentifier>{08E84E43-86EA-0FF0-2578-3ED14D870CD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\threading\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppapi_proxy_untrusted.gyp"/>
+    <None Include="newlib-x86-32.ppapi_proxy_untrusted.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <None Include="newlib-x86-64.ppapi_proxy_untrusted.source_list.gypcmd">
+      <Filter>_excluded_files</Filter>
+    </None>
+    <ClInclude Include="c\ppp_mouse_lock.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_fullscreen.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_system.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_module.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_websocket.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_rect.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_request_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_time.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_io.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_console.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_opengles2.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_message_loop.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_input_event.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_input_event.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_file_ref.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_var.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_messaging.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_graphics_2d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_size.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_var.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_gamepad.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_file_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_stdint.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_response_info.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_macros.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_completion_callback.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_mouse_cursor.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_var_array_buffer.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_image_data.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_graphics_3d.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_errors.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_url_loader.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_instance.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_messaging.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_bool.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_mouse_lock.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_array_output.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_resource.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_audio.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_touch_point.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\pp_point.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppp.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_core.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_view.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\ppb_audio_config.h">
+      <Filter>c\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_socket_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_events_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\extensions\dev\ppb_ext_alarms_dev.h">
+      <Filter>c\extensions\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_cursor_control_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_resource_array_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_memory_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_printing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_testing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_graphics_2d_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_ime_input_event_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_text_input_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_print_settings_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_gles_chromium_texture_mapping_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_dictionary_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_truetype_font_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_cursor_type_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_keyboard_input_event_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_array_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_video_decoder_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_char_set_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_video_capture_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_audio_input_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_opengles2ext_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_directory_reader_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_printing_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_video_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\pp_video_capture_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_var_deprecated.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_crypto_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_url_util_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_class_deprecated.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_view_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_file_chooser_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_buffer_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_device_ref_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_trace_event_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_text_input_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_font_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppp_video_capture_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\deprecated_bool.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\dev\ppb_video_decoder_dev.h">
+      <Filter>c\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_audio_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_buffer_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppp_broker.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_broker_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_file_io_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_url_loader_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_graphics_3d_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_image_data_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_char_set_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_browser_font_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\trusted\ppb_file_chooser_trusted.h">
+      <Filter>c\trusted\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_file_ref_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_x509_certificate_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_file.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_print.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_file_handle.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_instance_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_host_resolver_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_tcp_server_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_content_decryptor.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_proxy_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_network_monitor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppp_instance_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_net_address_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_fullscreen.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_clipboard.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_message_loop.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppp_flash_browser_operations.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_pdf.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_file_io_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\pp_private_font_charset.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_device_id.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_content_decryptor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_menu.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppp_content_decryptor_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_tcp_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_talk_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_udp_socket_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_flash_font_file.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="c\private\ppb_network_list_private.h">
+      <Filter>c\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webkit\glue\webkit_glue_export.h">
+      <Filter>..\webkit\glue\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webkit\glue\webpreferences.h">
+      <Filter>..\webkit\glue\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_platform_file.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_listener.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_export.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_logging.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_channel_reader.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_sender.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_message_start.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\file_descriptor_set_posix.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_channel_posix.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_message_macros.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_message_utils_impl.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_sync_channel.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_channel.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_message_utils.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_test_sink.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_sync_message.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_param_traits.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_channel_proxy.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_channel_handle.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\ipc_message.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ipc\param_traits_macros.h">
+      <Filter>..\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\third_party\valgrind\memcheck.h">
+      <Filter>..\native_client\src\third_party\valgrind\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\third_party\valgrind\valgrind.h">
+      <Filter>..\native_client\src\third_party\valgrind\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\untrusted\irt\irt_ppapi.h">
+      <Filter>..\native_client\src\untrusted\irt\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\include\nacl_base.h">
+      <Filter>..\native_client\src\include\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\include\nacl_macros.h">
+      <Filter>..\native_client\src\include\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\include\portability.h">
+      <Filter>..\native_client\src\include\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\include\nacl_compiler_annotations.h">
+      <Filter>..\native_client\src\include\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\include\win\port_win.h">
+      <Filter>..\native_client\src\include\win\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\trusted\service_runtime\include\machine\_types.h">
+      <Filter>..\native_client\src\trusted\service_runtime\include\machine\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\trusted\service_runtime\include\bits\wordsize.h">
+      <Filter>..\native_client\src\trusted\service_runtime\include\bits\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\native_client\src\shared\srpc\nacl_srpc.h">
+      <Filter>..\native_client\src\shared\srpc\_excluded_files</Filter>
+    </ClInclude>
+    <None Include="..\native_client\build\build_nexe.py">
+      <Filter>..\native_client\build\_excluded_files</Filter>
+    </None>
+    <ClInclude Include="..\third_party\WebKit\Source\WebKit\chromium\public\WebSocket.h">
+      <Filter>..\third_party\WebKit\Source\WebKit\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\WebKit\chromium\public\WebTextRun.h">
+      <Filter>..\third_party\WebKit\Source\WebKit\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\WebKit\chromium\public\WebFont.h">
+      <Filter>..\third_party\WebKit\Source\WebKit\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\WebKit\chromium\public\WebFontDescription.h">
+      <Filter>..\third_party\WebKit\Source\WebKit\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebCanvas.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebPrivatePtr.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebFloatRect.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebColor.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebFloatPoint.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebCommon.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebRect.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\WebKit\Source\Platform\chromium\public\WebString.h">
+      <Filter>..\third_party\WebKit\Source\Platform\chromium\public\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkDeque.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkFlattenable.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkFloatingPoint.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkTDArray.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPixelRef.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkMath.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkDrawLooper.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkSize.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkScalar.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkString.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPath.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkThread.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkRect.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPreConfig.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkDevice.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkFixed.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkFloatBits.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\Sk64.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkRefCnt.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkMatrix.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkScalarCompare.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPaint.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkTemplates.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkColorTable.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkTypes.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPostConfig.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkFontLCDConfig.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkThread_platform.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkInstCnt.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkPoint.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkColor.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkCanvas.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkXfermode.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkRegion.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkBitmap.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkClipStack.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkTArray.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\skia\include\core\SkDeviceProperties.h">
+      <Filter>..\third_party\skia\include\core\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\icu\public\i18n\unicode\usearch.h">
+      <Filter>..\third_party\icu\public\i18n\unicode\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\icu\public\common\unicode\ubidi.h">
+      <Filter>..\third_party\icu\public\common\unicode\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media\audio\shared_memory_util.h">
+      <Filter>..\media\audio\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media\audio\audio_parameters.h">
+      <Filter>..\media\audio\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media\base\channel_layout.h">
+      <Filter>..\media\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media\base\media_export.h">
+      <Filter>..\media\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media\base\audio_bus.h">
+      <Filter>..\media\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\testing\gtest\include\gtest\gtest_prod.h">
+      <Filter>..\testing\gtest\include\gtest\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\googleurl\src\url_canon.h">
+      <Filter>..\googleurl\src\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\googleurl\src\gurl.h">
+      <Filter>..\googleurl\src\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\googleurl\src\url_parse.h">
+      <Filter>..\googleurl\src\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\googleurl\src\url_common.h">
+      <Filter>..\googleurl\src\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\googleurl\src\url_canon_stdstring.h">
+      <Filter>..\googleurl\src\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\single_thread_task_runner.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\callback_forward.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_mac.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\string_util_posix.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_gtk.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\process.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_atomicword_compat.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\gtest_prod_util.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\stringprintf.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_x86_msvc.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\pending_task.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\task_runner.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\bind_helpers.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_mac.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\basictypes.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\nullable_string16.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\compiler_specific.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_libevent.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\callback_internal.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_mips_gcc.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_linux.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_glib.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_loop.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\pickle.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\tracking_info.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\sync_socket.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\observer_list.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\observer_list_threadsafe.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\hash_tables.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\string16.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\bind.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_loop_proxy.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\tracked_objects.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\bind_internal.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\process_util.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomic_ref_count.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\platform_file.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\port.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\utf_string_conversions.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\template_util.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\sequenced_task_runner.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\lazy_instance.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\safe_numerics.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\callback.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\format_macros.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\file_descriptor_posix.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\timer.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\command_line.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_win.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_gcc.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\values.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_io_ios.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\tuple.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_tsan.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\stl_util.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\sequenced_task_runner_helpers.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\event_types.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\base_export.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\move.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_dispatcher.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_aurax11.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops_internals_x86_gcc.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_pump_observer.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\at_exit.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\string_util.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\string_util_win.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\time.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\location.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\logging.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\bind_internal_win.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\shared_memory.h">
+      <Filter>..\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\files\file_path.h">
+      <Filter>..\base\files\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\third_party\dynamic_annotations\dynamic_annotations.h">
+      <Filter>..\base\third_party\dynamic_annotations\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win\object_watcher.h">
+      <Filter>..\base\win\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win\scoped_handle.h">
+      <Filter>..\base\win\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\profiler\scoped_profile.h">
+      <Filter>..\base\profiler\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\profiler\tracked_time.h">
+      <Filter>..\base\profiler\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\profiler\alternate_timer.h">
+      <Filter>..\base\profiler\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\metrics\bucket_ranges.h">
+      <Filter>..\base\metrics\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\metrics\histogram_base.h">
+      <Filter>..\base\metrics\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\metrics\histogram.h">
+      <Filter>..\base\metrics\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\metrics\histogram_samples.h">
+      <Filter>..\base\metrics\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_checker_impl.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_checker.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_restrictions.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\simple_thread.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\platform_thread.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\non_thread_safe_impl.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_local.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_collision_warner.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\non_thread_safe.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread_local_storage.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\threading\thread.h">
+      <Filter>..\base\threading\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\mac\scoped_cftyperef.h">
+      <Filter>..\base\mac\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\mac\scoped_cffiledescriptorref.h">
+      <Filter>..\base\mac\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\synchronization\condition_variable.h">
+      <Filter>..\base\synchronization\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\synchronization\waitable_event.h">
+      <Filter>..\base\synchronization\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\synchronization\lock_impl.h">
+      <Filter>..\base\synchronization\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\synchronization\waitable_event_watcher.h">
+      <Filter>..\base\synchronization\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\synchronization\lock.h">
+      <Filter>..\base\synchronization\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\posix\file_descriptor_shuffle.h">
+      <Filter>..\base\posix\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\posix\eintr_wrapper.h">
+      <Filter>..\base\posix\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\containers\mru_cache.h">
+      <Filter>..\base\containers\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\ref_counted.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\shared_memory.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\raw_scoped_refptr_mismatch_checker.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\scoped_policy.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\ref_counted_memory.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\weak_ptr.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\aligned_memory.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\singleton.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\scoped_vector.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\linked_ptr.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\memory\scoped_ptr.h">
+      <Filter>..\base\memory\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\debug\debugger.h">
+      <Filter>..\base\debug\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\debug\crash_logging.h">
+      <Filter>..\base\debug\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\debug\trace_event.h">
+      <Filter>..\base\debug\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\debug\trace_event_impl.h">
+      <Filter>..\base\debug\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\strings\string_split.h">
+      <Filter>..\base\strings\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\strings\string_piece.h">
+      <Filter>..\base\strings\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\message_loop\message_loop_proxy.h">
+      <Filter>..\base\message_loop\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\size_f.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\rect_base.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\size_base.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\point_base.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\rect.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\vector2d_f.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\point_f.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\size.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\vector2d.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\rect_f.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\gfx\point.h">
+      <Filter>..\ui\gfx\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\ui_export.h">
+      <Filter>..\ui\base\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\x\x11_util.h">
+      <Filter>..\ui\base\x\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\keycodes\keyboard_codes_win.h">
+      <Filter>..\ui\base\keycodes\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\keycodes\keyboard_codes.h">
+      <Filter>..\ui\base\keycodes\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\keycodes\keyboard_codes_posix.h">
+      <Filter>..\ui\base\keycodes\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\events\event_constants.h">
+      <Filter>..\ui\base\events\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\surface\surface_export.h">
+      <Filter>..\ui\surface\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\surface\transport_dib.h">
+      <Filter>..\ui\surface\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\build\build_config.h">
+      <Filter>..\build\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\components\tracing\child_trace_message_filter.h">
+      <Filter>..\components\tracing\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skia\ext\platform_device.h">
+      <Filter>..\skia\ext\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skia\ext\refptr.h">
+      <Filter>..\skia\ext\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skia\ext\platform_canvas.h">
+      <Filter>..\skia\ext\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\gpu_export.h">
+      <Filter>..\gpu\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\ipc\command_buffer_proxy.h">
+      <Filter>..\gpu\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\ipc\gpu_command_buffer_traits.h">
+      <Filter>..\gpu\ipc\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\client_context_state_autogen.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\hash_tables.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_cmd_helper.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_interface.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_impl_export.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_implementation.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\cmd_buffer_helper.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_interface_autogen.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\ref_counted.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_cmd_helper_autogen.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\share_group.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\buffer_tracker.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\query_tracker.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\client_context_state.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\ring_buffer.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\client\gles2_implementation_autogen.h">
+      <Filter>..\gpu\command_buffer\client\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\command_buffer.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\types.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\command_buffer_shared.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\debug_marker_manager.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_utils.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\constants.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\logging.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_format_autogen.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_ids_autogen.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\compiler_specific.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\cmd_buffer_common.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_utils_export.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_utils_autogen.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\bitfield_helpers.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_ids.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\buffer.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gpu\command_buffer\common\gles2_cmd_format.h">
+      <Filter>..\gpu\command_buffer\common\_excluded_files</Filter>
+    </ClInclude>
+    <None Include="$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\stamp.prep">
+      <Filter>$(OutDir)obj\global_intermediate\sdk\toolchain\win_x86_newlib\_excluded_files</Filter>
+    </None>
+    <ClInclude Include="thunk\ppb_video_capture_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_x509_certificate_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_fullscreen_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_tcp_server_socket_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_preamble.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_url_response_info_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_message_loop_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_browser_font_trusted_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_gamepad_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_input_event_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_functions_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppapi_thunk_export.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\extensions_common_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_network_list_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_file_ref_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_tcp_socket_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_graphics_2d_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_file_system_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\enter.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_audio_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_printing_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_directory_reader_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_ppb_public_stable.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_audio_config_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_clipboard_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_file_chooser_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_truetype_font_singleton_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_truetype_font_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_file_io_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_buffer_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_ppb_public_dev.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_font_file_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_ppb_private_no_permissions.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_file_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_audio_input_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_graphics_3d_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_instance_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_video_decoder_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_pdf_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_browser_font_singleton_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_view_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_broker_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_talk_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_network_monitor_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_udp_socket_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_message_loop_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\thunk.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_device_ref_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\resource_creation_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_postamble.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_menu_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_ppb_private.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\interfaces_ppb_private_flash.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_host_resolver_private_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_url_request_info_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_image_data_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_websocket_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_resource_array_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_url_loader_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="thunk\ppb_flash_device_id_api.h">
+      <Filter>thunk\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="native_client\src\shared\ppapi_proxy\ppruntime.h">
+      <Filter>native_client\src\shared\ppapi_proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppapi_command_buffer_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\file_system_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\broker_dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_network_monitor_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_image_data_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_device_id_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\serialized_structs.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\browser_font_singleton_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_broker_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\audio_input_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_clipboard_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_testing_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\extensions_common_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_x509_certificate_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_graphics_3d_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_text_input_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\video_capture_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\audio_input_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_instance_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\host_var_serialization_rules.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\proxy_array_output.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_resource_callback.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\file_io_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\truetype_font_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_graphics_3d_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\device_enumeration_resource_helper.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_messaging_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\directory_reader_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\url_request_info_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\broker_dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_handle.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\truetype_font_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_broker_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\video_capture_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_instance_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_class_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_fullscreen_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\flash_menu_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\pdf_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\file_io_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_buffer_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_audio_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\pdf_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppapi_param_traits.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_tcp_socket_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_video_decoder_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_file_ref_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_flash_menu.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_tcp_server_socket_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_input_event_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\host_dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_text_input_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\url_response_info_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\browser_font_singleton_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\host_resolver_private_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_message_loop_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\url_response_info_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_content_decryptor_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_file_ref_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_input_event_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\device_enumeration_resource_helper.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_instance_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\websocket_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\printing_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_font_file_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\broker_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\file_system_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_fullscreen_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_broker_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppapi_proxy_export.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\host_var_serialization_rules.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_messaging_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\device_enumeration_resource_helper.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_var_serialization_rules.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_var_tracker.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_var_deprecated_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_flash_message_loop_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_tcp_server_socket_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_clipboard_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\host_var_serialization_rules.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_object_var.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_file_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_content_decryptor_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_flash_message_loop_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\gamepad_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\graphics_2d_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_resource_tracker.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\host_resolver_private_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_message_loop_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_graphics_3d_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\interface_list.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_file_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\pdf_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\directory_reader_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_video_decoder_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\content_decryptor_private_serializer.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_message_filter.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_mouse_lock_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_url_loader_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\host_dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_channel.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_video_decoder_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\connection.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_globals.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_buffer_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_proxy_delegate.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_graphics_3d_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\proxy_object_var.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_mouse_lock_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_menu_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_array_buffer_var.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\talk_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\resource_creation_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_audio_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_var_tracker.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\resource_message_params.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_file_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_instance_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_resource_tracker.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_x509_certificate_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\enter_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\plugin_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\proxy_array_output.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_network_monitor_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\proxy_module.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\video_capture_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\truetype_font_singleton_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_video_decoder_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_globals.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_dispatcher.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\plugin_main_nacl.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_message_filter.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\audio_input_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\proxy_channel.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\talk_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_buffer_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_menu_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\dispatch_reply_message.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_url_loader_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\file_chooser_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_video_decoder_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_content_decryptor_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\broker_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppp_instance_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\interface_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\talk_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\truetype_font_singleton_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppapi_messages.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\var_serialization_rules.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\host_dispatcher.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\browser_font_resource_trusted.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\browser_font_singleton_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_device_id_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_flash_message_loop_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_testing_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_var_serialization_rules.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\broker_dispatcher.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_font_file_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\interface_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\udp_socket_private_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\browser_font_resource_trusted.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppapi_command_buffer_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_font_file_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\plugin_array_buffer_var.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_core_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\ppb_var_deprecated_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppb_video_decoder_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\locking_resource_releaser.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_core_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\graphics_2d_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\proxy_module.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\dispatcher.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppapi_message_utils.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\flash_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\proxy_completion_callback_factory.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\printing_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_printing_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\plugin_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\websocket_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_fullscreen_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\serialized_var.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\file_chooser_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxy\flash_clipboard_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_instance_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\interface_list.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\browser_font_resource_trusted.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\url_request_info_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppp_instance_private_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\gamepad_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\dispatcher.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppp_class_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\ppb_image_data_proxy.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\resource_creation_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\raw_var_data.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\extensions_common_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\udp_socket_private_resource.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClCompile Include="proxy\flash_device_id_resource.cc">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClCompile>
+    <ClInclude Include="proxy\ppp_printing_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy\ppb_tcp_socket_private_proxy.h">
+      <Filter>proxy\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_var_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_video_decoder_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\api_id.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\thread_aware_callback.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\resource.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\time_conversion.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\resource_tracker.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppp_flash_browser_operations_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppp_instance_combined.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_view_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\scoped_pp_resource.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_audio_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppapi_globals.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\url_request_info_data.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_url_util_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\var_value_conversions.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_gamepad_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_file_ref_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_instance_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\flash_clipboard_format_registry.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_device_ref_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\file_path.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_graphics_3d_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\var_tracker.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppapi_preferences.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_audio_config_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_opengles2_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppapi_permissions.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\callback_tracker.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\var.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\dir_contents.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\file_io_state_manager.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\scoped_pp_var.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\singleton_resource_id.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\url_response_info_data.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_resource_array_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\array_writer.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppapi_shared_export.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\file_type_conversion.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppapi_nacl_channel_args.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_message_loop_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\proxy_lock.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\tracked_callback.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_network_list_private_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\host_resource.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_input_event_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\platform_file.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\ppb_image_data_shared.h">
+      <Filter>shared_impl\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\private\ppb_x509_certificate_private_shared.h">
+      <Filter>shared_impl\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\private\ppb_tcp_server_socket_shared.h">
+      <Filter>shared_impl\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_impl\private\tcp_socket_private_impl.h">
+      <Filter>shared_impl\private\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\core.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\resource.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\output_traits.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\logging.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\file_ref.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\pass_ref.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\array_output.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\instance_handle.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\completion_callback.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\module.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\var_array_buffer.h">
+      <Filter>cpp\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\ext_output_traits.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\from_var_converter.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\extensions\optional.h">
+      <Filter>cpp\extensions\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\directory_entry_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_array_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\dev\var_dictionary_dev.h">
+      <Filter>cpp\dev\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory.h">
+      <Filter>utility\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\completion_callback_factory_thread_traits.h">
+      <Filter>utility\_excluded_files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\threading\lock.h">
+      <Filter>utility\threading\_excluded_files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
