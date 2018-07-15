@@ -77,10 +77,12 @@
   <ItemGroup>
     <ClInclude Include="ppapi_framework.h" />
     <ClInclude Include="ppapi_plugin_object.h" />
+    <ClInclude Include="ppChromePlugin.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ppapi_framework.cpp" />
     <ClCompile Include="ppapi_plugin_object.cpp" />
+    <ClCompile Include="ppChromePlugin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

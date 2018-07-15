@@ -19,6 +19,9 @@
     <Filter Include="B. ppapi插件对象">
       <UniqueIdentifier>{6b30917c-cb2c-47d7-ba56-0a234c1c359f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="C. 业务对象">
+      <UniqueIdentifier>{cca44474-15b3-4c98-95e7-037c3747e1a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ppapi_framework.h">
@@ -27,6 +30,9 @@
     <ClInclude Include="ppapi_plugin_object.h">
       <Filter>B. ppapi插件对象</Filter>
     </ClInclude>
+    <ClInclude Include="ppChromePlugin.h">
+      <Filter>C. 业务对象</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ppapi_framework.cpp">
@@ -34,6 +40,9 @@
     </ClCompile>
     <ClCompile Include="ppapi_plugin_object.cpp">
       <Filter>B. ppapi插件对象</Filter>
+    </ClCompile>
+    <ClCompile Include="ppChromePlugin.cpp">
+      <Filter>C. 业务对象</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

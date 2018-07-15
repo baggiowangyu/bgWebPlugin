@@ -1,0 +1,1 @@
+"E:\opensource\bgWebPlugin\PPAPI\GoogleChromePortable\App\Google Chrome\gxxgmchrome.exe" --register-pepper-plugins="E:\opensource\bgWebPlugin\bgChromePlugin\Debug\video_decode.dll;application/x-ppapi-example-video-decode"
