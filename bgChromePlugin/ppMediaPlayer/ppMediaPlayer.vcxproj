@@ -55,8 +55,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\ext\build\Debug\lib;..\..\ext\ffmpeg\3.4.2\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ppapi_cpp.lib;ppapi_cpp_objects.lib;ppapi_egl.lib;ppapi_gles2.lib;avformat.lib;avcodec.lib;avdevice.lib;avfilter.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ext\build\Debug\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ppapi_cpp.lib;ppapi_cpp_objects.lib;ppapi_egl.lib;ppapi_gles2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -77,14 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ffmpeg_stub.cpp" />
-    <ClCompile Include="MediaPlayer.cpp" />
     <ClCompile Include="ppMediaPlayer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ffmepeg_interface.h" />
-    <ClInclude Include="ffmpeg_stub.h" />
-    <ClInclude Include="MediaPlayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

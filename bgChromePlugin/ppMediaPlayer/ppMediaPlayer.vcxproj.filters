@@ -24,22 +24,5 @@
     <ClCompile Include="ppMediaPlayer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MediaPlayer.cpp">
-      <Filter>A. 播放器类</Filter>
-    </ClCompile>
-    <ClCompile Include="ffmpeg_stub.cpp">
-      <Filter>0. FFMpegStub</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MediaPlayer.h">
-      <Filter>A. 播放器类</Filter>
-    </ClInclude>
-    <ClInclude Include="ffmpeg_stub.h">
-      <Filter>0. FFMpegStub</Filter>
-    </ClInclude>
-    <ClInclude Include="ffmepeg_interface.h">
-      <Filter>0. FFMpegStub</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

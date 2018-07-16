@@ -6,13 +6,16 @@ struct AVStream;
 struct AVCodecContext;
 struct AVCodec;
 
+class ffmpeg_stub;
+
 class MediaPlayer
 {
 public:
-	MediaPlayer();
+	MediaPlayer(const char *location);
 	~MediaPlayer();
 
 public:
+	int Initialize(const char *location);
 	int Open(const char *url);
 
 private:
@@ -31,6 +34,7 @@ private:
 	AVCodec *audio_codec_;
 
 private:
+	ffmpeg_stub *ffmpeg_stub_;
 };
 
 #endif//_MediaPlayer_H_

@@ -101,6 +101,61 @@ int ffmpeg_stub::Initialize(const char *root_dir)
 	}
 
 	// ÔØÈëº¯ÊıÖ¸Õë
+	ptr_av_register_all = (_av_register_all)GetProcAddress(hMod_avformat_, "av_register_all");
+	if (ptr_av_register_all == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "av_register_all", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avformat_network_init = (_avformat_network_init)GetProcAddress(hMod_avformat_, "avformat_network_init");
+	if (ptr_avformat_network_init == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avformat_network_init", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avformat_network_deinit = (_avformat_network_deinit)GetProcAddress(hMod_avformat_, "avformat_network_deinit");
+	if (ptr_avformat_network_deinit == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avformat_network_deinit", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avformat_open_input = (_avformat_open_input)GetProcAddress(hMod_avformat_, "avformat_open_input");
+	if (ptr_avformat_open_input == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avformat_open_input", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avformat_find_stream_info = (_avformat_find_stream_info)GetProcAddress(hMod_avformat_, "avformat_find_stream_info");
+	if (ptr_avformat_open_input == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avformat_find_stream_info", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avcodec_register_all = (_avcodec_register_all)GetProcAddress(hMod_avformat_, "avcodec_register_all");
+	if (ptr_avcodec_register_all == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avcodec_find_decoder", errCode);
+		OutputDebugStringA(msg);
+	}
+
+	ptr_avcodec_find_decoder = (_avcodec_find_decoder)GetProcAddress(hMod_avformat_, "avcodec_find_decoder");
+	if (ptr_avformat_open_input == nullptr)
+	{
+		errCode = GetLastError();
+		sprintf_s(msg, 4096, "ÔØÈëº¯Êı %s Ê§°Ü£¡´íÎóÂë£º%d\n", "avcodec_find_decoder", errCode);
+		OutputDebugStringA(msg);
+	}
 
 
 	return errCode;

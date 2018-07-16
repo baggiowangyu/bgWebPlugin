@@ -1,4 +1,5 @@
 #include "MediaPlayer.h"
+#include "ffmpeg_stub.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -8,12 +9,11 @@ extern "C" {
 };
 #endif
 
-MediaPlayer::MediaPlayer()
+MediaPlayer::MediaPlayer(const char *location)
 	: input_fmtctx_(nullptr)
+	, ffmpeg_stub_(new ffmpeg_stub())
 {
-	av_register_all();
-	avformat_network_init();
-	avcodec_register_all();
+	
 }
 
 MediaPlayer::~MediaPlayer()
@@ -24,17 +24,30 @@ MediaPlayer::~MediaPlayer()
 	}
 }
 
+int MediaPlayer::Initialize(const char *location)
+{
+	int errCode = ffmpeg_stub_->Initialize(location);
+	if (errCode != 0)
+		return errCode;
+
+	ffmpeg_stub_->ptr_av_register_all();
+	ffmpeg_stub_->ptr_avformat_network_init();
+	ffmpeg_stub_->ptr_avcodec_register_all();
+
+	return 0;
+}
+
 int MediaPlayer::Open(const char *url)
 {
 	int errCode = 0;
 
-	errCode = avformat_open_input(&input_fmtctx_, url, nullptr, nullptr);
+	errCode = ffmpeg_stub_->ptr_avformat_open_input(&input_fmtctx_, url, nullptr, nullptr);
 	if (errCode < 0)
 	{
 		return errCode;
 	}
 
-	errCode = avformat_find_stream_info(input_fmtctx_, nullptr);
+	errCode = ffmpeg_stub_->ptr_avformat_find_stream_info(input_fmtctx_, nullptr);
 	if (errCode < 0)
 	{
 		return errCode;
@@ -47,12 +60,12 @@ int MediaPlayer::Open(const char *url)
 		if (stream->codec->codec_type == AVMEDIA_TYPE_VIDEO)
 		{
 			video_stream_ = stream;
-			video_codec_ = avcodec_find_decoder(stream->codec->codec_id);
+			video_codec_ = ffmpeg_stub_->ptr_avcodec_find_decoder(stream->codec->codec_id);
 		}
 		else if (stream->codec->codec_type == AVMEDIA_TYPE_AUDIO)
 		{
 			audio_stream_ = stream;
-			audio_codec_ = avcodec_find_decoder(stream->codec->codec_id);
+			audio_codec_ = ffmpeg_stub_->ptr_avcodec_find_decoder(stream->codec->codec_id);
 		}
 	}
 

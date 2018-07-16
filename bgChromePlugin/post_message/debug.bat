@@ -1,0 +1,1 @@
+"D:\GOSUNCN\GSBbrowser_chrome\GSBrowser.exe" --no-sandbox --register-pepper-plugins="E:\Project\Personal\CPP\bgWebPlugin\bgChromePlugin\Debug\post_message.dll;application/x-ppapi-post-message-example"
