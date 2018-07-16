@@ -50,7 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PPMEDIAPLAYEREX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\ext\;..\..\ext\ppapi\lib\gl\include;..\..\ext\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ext\;..\..\ext\ppapi\lib\gl\include;..\..\ext\jsoncpp\include;..\..\ext\ffmpeg\3.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -77,10 +77,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ffmpeg_stub.cpp" />
+    <ClCompile Include="ppMediaHandler.cpp" />
     <ClCompile Include="ppMediaPlayerEx.cpp" />
     <ClCompile Include="ppMediaPlayerExBusiness.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ffmepeg_interface.h" />
+    <ClInclude Include="ffmpeg_stub.h" />
+    <ClInclude Include="ppMediaHandler.h" />
     <ClInclude Include="ppMediaPlayerExBusiness.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

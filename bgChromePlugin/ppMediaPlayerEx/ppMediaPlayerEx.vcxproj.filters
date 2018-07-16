@@ -12,6 +12,9 @@
     <Filter Include="业务层">
       <UniqueIdentifier>{16a4052c-7a3c-471d-8c0d-f7e61c58dc90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="解码库">
+      <UniqueIdentifier>{cc71f557-b842-4584-9c05-3a4f051aafb9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ppMediaPlayerEx.cpp">
@@ -20,9 +23,24 @@
     <ClCompile Include="ppMediaPlayerExBusiness.cpp">
       <Filter>业务层</Filter>
     </ClCompile>
+    <ClCompile Include="ffmpeg_stub.cpp">
+      <Filter>解码库</Filter>
+    </ClCompile>
+    <ClCompile Include="ppMediaHandler.cpp">
+      <Filter>业务层</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ppMediaPlayerExBusiness.h">
+      <Filter>业务层</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmepeg_interface.h">
+      <Filter>解码库</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmpeg_stub.h">
+      <Filter>解码库</Filter>
+    </ClInclude>
+    <ClInclude Include="ppMediaHandler.h">
       <Filter>业务层</Filter>
     </ClInclude>
   </ItemGroup>

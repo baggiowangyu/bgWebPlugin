@@ -10,10 +10,12 @@
   <script>
 
   function HandleMessage(message_event) {
+	var outputText = document.getElementById("outputBox");
+
     if (message_event.data) {
-      alert(message_event.data);
+      outputText.value = message_event.data;
     } else {
-      alert("The string was not a palindrome.");
+      outputText.value = "The string was not a palindrome.";
     }
   }
 
@@ -40,11 +42,15 @@
 
   </script>
 
-  <input type="text" id="inputBox" name="inputBox" value="ablewasiereisawelba"/>
-  <p>
-  <button onclick="SendString()">Is Palindrome</button>
+  <textarea type="text" id="inputBox" name="inputBox"  rows="20" cols="100">{"command":"init","request_id":"11223344"}</textarea>
+  <br />
+  <br />
+  <button onclick="SendString()">Send Command</button>
   <object id="plugin" type="application/x-ppapi-post-message-example"
-          width="1" height="1"/>
+          width="1" height="1"></object>
+  <br />
+  <br />
+  <textarea type="text" id="outputBox" name="outputBox"  rows="20" cols="100"></textarea>
   <hr>
 </body>
 </html>

@@ -3,6 +3,9 @@
 
 #include "json/json.h"
 
+class ffmpeg_stub;
+class ppMediaHandler;
+
 class ppMediaPlayerExBusiness
 {
 public:
@@ -15,6 +18,13 @@ public:
 
 public:
 	bool Initialize(Json::Value &result);
+
+public:
+	bool Play(Json::Value command_root, Json::Value &result);
+
+private:
+	std::string ffmpeg_lib_location_;
+	ffmpeg_stub *ffmpeg_stub_;
 };
 
 #endif//_ppMediaPlayerExBusiness_H_

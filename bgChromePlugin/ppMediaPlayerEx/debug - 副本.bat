@@ -1,0 +1,1 @@
+"D:\GOSUNCN\GSBbrowser_chrome\GSBrowser.exe" --no-sandbox --register-pepper-plugins="E:\opensource\bgWebPlugin\bgChromePlugin\Debug\ppMediaPlayerEx.dll;application/x-ppapi-post-message-example"

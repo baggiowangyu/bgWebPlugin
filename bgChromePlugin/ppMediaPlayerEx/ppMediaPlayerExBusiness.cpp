@@ -1,10 +1,11 @@
 #include "ppMediaPlayerExBusiness.h"
 
 #include "ppapi/cpp/var.h"
-
+#include "ffmpeg_stub.h"
 #include <Windows.h>
 
 ppMediaPlayerExBusiness::ppMediaPlayerExBusiness()
+	: ffmpeg_stub_(new ffmpeg_stub())
 {
 
 }
@@ -39,6 +40,10 @@ bool ppMediaPlayerExBusiness::CommandHandler(Json::Value command_root, Json::Val
 	if (cmd.compare("init") == 0)
 	{
 		ret = this->Initialize(result);
+	}
+	else if (cmd.compare("play") == 0)
+	{
+		ret = this->Play(command_root, result);
 	}
 
 	result["command"] = command_root["command"];
@@ -82,11 +87,29 @@ bool ppMediaPlayerExBusiness::Initialize(Json::Value &result)
 		return true;
 	}
 
-	sprintf_s(msg, 4096, "读取到安装路径%s！\n", location);
-	OutputDebugStringA(msg);
+	ffmpeg_lib_location_ = location;
+
+	// 初始化ffmpeg_stub
+	int errCode = ffmpeg_stub_->Initialize(location);
+	if (errCode != 0)
+	{
+		result["result"] = "INITIALIZE VIDEO DECODER FAILED.";
+		result["errcode"] = Json::Value(errCode);
+	}
 
 	result["result"] = "SUCCESS";
 	result["errcode"] = Json::Value(0);
+
+	return true;
+}
+
+bool ppMediaPlayerExBusiness::Play(Json::Value command_root, Json::Value &result)
+{
+	if (command_root["url"].empty())
+		return false;
+
+	std::string url = command_root["url"].asString();
+
 
 	return true;
 }
