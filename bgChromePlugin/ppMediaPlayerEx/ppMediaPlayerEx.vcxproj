@@ -50,13 +50,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PPMEDIAPLAYEREX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\ext\;..\..\ext\ppapi\lib\gl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ext\;..\..\ext\ppapi\lib\gl\include;..\..\ext\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\ext\build\Debug\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ppapi_cpp.lib;ppapi_cpp_objects.lib;ppapi_egl.lib;ppapi_gles2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ext\build\Debug\lib;..\..\ext\jsoncpp\makefiles\msvc2010\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ppapi_cpp.lib;ppapi_cpp_objects.lib;ppapi_egl.lib;ppapi_gles2.lib;lib_json.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -78,6 +78,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ppMediaPlayerEx.cpp" />
+    <ClCompile Include="ppMediaPlayerExBusiness.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ppMediaPlayerExBusiness.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,6 +8,7 @@
 #include "ppapi/cpp/module.h"
 #include "ppapi/cpp/var.h"
 
+#include "ppMediaPlayerExBusiness.h"
 #include <Windows.h>
 
 // When compiling natively on Windows, PostMessage can be #define-d to
@@ -25,6 +26,9 @@ public:
 	explicit MyInstance(PP_Instance instance) : pp::Instance(instance) {}
 	virtual ~MyInstance() {}
 	virtual void HandleMessage(const pp::Var& message_data);
+
+private:
+	ppMediaPlayerExBusiness bussiness_;
 };
 
 // HandleMessage gets invoked when postMessage is called on the DOM element
@@ -35,38 +39,29 @@ void MyInstance::HandleMessage(const pp::Var& message_data) {
 	if (message_data.is_string()) {
 		std::string string_copy(message_data.AsString());
 
-		char msg[4096] = {0};
+		Json::Reader reader;
+		Json::Value root;
+		Json::Value result;
 
-		// 这里从注册表读取ffmpeg的安装位置
-		// 我们默认放置到SOFTWARE
-		HKEY hKey = nullptr;
-		DWORD dwDisposition = 0;
-		LSTATUS lStatus = RegCreateKeyA(HKEY_LOCAL_MACHINE, "SOFTWARE\\GxxGm\\FFmpeg", &hKey);
-		if (lStatus != ERROR_SUCCESS)
+		if (!reader.parse(string_copy, root))
 		{
-			// 检查错误，并输出
-			sprintf_s(msg, 4096, "打开注册表 %s 失败！错误码：%d\n", "SOFTWARE\\GxxGm\\FFmpeg", lStatus);
-			OutputDebugStringA(msg);
+			// 解析失败
+			const char *ret = "{\"result\":\"failed\",\"errcode\":\"-1\"}";
+			PostMessage(pp::Var(ret));
 			return ;
 		}
 
-		DWORD dwType = 0;
-		DWORD dwcbData = 4096;
-		char location[4096] = {0};
-		lStatus = RegQueryValueExA(hKey, "Location", nullptr, &dwType, (LPBYTE)location, &dwcbData);
-		RegCloseKey(hKey);
-		if (lStatus != ERROR_SUCCESS)
+		// 解析成功，将消息传入消息分发层
+		if (!bussiness_.CommandHandler(root, result))
 		{
-			// 检查错误，并输出
-			sprintf_s(msg, 4096, "读取注册表 %s->%s 失败！错误码：%d\n", "SOFTWARE\\GxxGm\\FFmpeg", "Location", lStatus);
+			char msg[4096] = {0};
+			sprintf_s(msg, 4096, "命令分发失败！\n");
 			OutputDebugStringA(msg);
-			return ;
 		}
 
-		sprintf_s(msg, 4096, "读取到安装路径%s！\n", location);
-		OutputDebugStringA(msg);
-
-		PostMessage(pp::Var(location));
+		// 
+		Json::FastWriter writer;
+		PostMessage(pp::Var(writer.write(result)));
 	}
 }
 
