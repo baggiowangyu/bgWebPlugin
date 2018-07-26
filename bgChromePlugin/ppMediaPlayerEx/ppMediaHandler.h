@@ -5,6 +5,7 @@ struct AVFormatContext;
 struct AVStream;
 struct AVCodecContext;
 struct AVCodec;
+struct AVRational;
 
 class ffmpeg_stub;
 
@@ -16,6 +17,7 @@ public:
 
 public:
 	int Demuxing(const char *url);
+	int Decode();
 
 public:
 	ffmpeg_stub *stub_;
@@ -29,6 +31,19 @@ public:
 	AVCodecContext *audio_codec_ctx_;
 	AVCodec *video_codec_;
 	AVCodec *audio_codec_;
+
+public:
+	// 解复用后的数据
+	float video_framerate_;
+	__int64 video_bitrate_;
+	int video_width_;
+	int video_height_;
+	AVRational *video_time_base_;
+
+	int audio_samplerate_;
+	int audio_channels_;
+	__int64 audio_bitrate_;
+
 };
 
 #endif//_ppMediaHandler_H_

@@ -81,12 +81,14 @@
     <ClCompile Include="ppMediaHandler.cpp" />
     <ClCompile Include="ppMediaPlayerEx.cpp" />
     <ClCompile Include="ppMediaPlayerExBusiness.cpp" />
+    <ClCompile Include="ppMediaQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ffmepeg_interface.h" />
     <ClInclude Include="ffmpeg_stub.h" />
     <ClInclude Include="ppMediaHandler.h" />
     <ClInclude Include="ppMediaPlayerExBusiness.h" />
+    <ClInclude Include="ppMediaQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

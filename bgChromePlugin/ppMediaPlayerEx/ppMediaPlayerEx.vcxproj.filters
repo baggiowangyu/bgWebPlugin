@@ -29,6 +29,9 @@
     <ClCompile Include="ppMediaHandler.cpp">
       <Filter>业务层</Filter>
     </ClCompile>
+    <ClCompile Include="ppMediaQueue.cpp">
+      <Filter>业务层</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ppMediaPlayerExBusiness.h">
@@ -41,6 +44,9 @@
       <Filter>解码库</Filter>
     </ClInclude>
     <ClInclude Include="ppMediaHandler.h">
+      <Filter>业务层</Filter>
+    </ClInclude>
+    <ClInclude Include="ppMediaQueue.h">
       <Filter>业务层</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,10 +2,12 @@
 
 #include "ppapi/cpp/var.h"
 #include "ffmpeg_stub.h"
+#include "ppMediaHandler.h"
 #include <Windows.h>
 
 ppMediaPlayerExBusiness::ppMediaPlayerExBusiness()
 	: ffmpeg_stub_(new ffmpeg_stub())
+	, media_handler_(new ppMediaHandler(ffmpeg_stub_))
 {
 
 }
@@ -109,7 +111,23 @@ bool ppMediaPlayerExBusiness::Play(Json::Value command_root, Json::Value &result
 		return false;
 
 	std::string url = command_root["url"].asString();
+	int errCode = media_handler_->Demuxing(url.c_str());
+	if (errCode != 0)
+	{
+		result["result"] = "DEMUXING FAILED.";
+		result["errcode"] = Json::Value(errCode);
 
+		return true;
+	}
+#ifdef _DEBUG
+ 	else
+ 	{
+ 		result["result"] = "DEMUXING SUCCESS.";
+ 		result["errcode"] = Json::Value(errCode);
+ 	}
+#endif
+
+	// 调用播放接口
 
 	return true;
 }

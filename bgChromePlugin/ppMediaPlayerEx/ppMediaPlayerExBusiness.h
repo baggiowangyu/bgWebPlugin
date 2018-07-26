@@ -25,6 +25,7 @@ public:
 private:
 	std::string ffmpeg_lib_location_;
 	ffmpeg_stub *ffmpeg_stub_;
+	ppMediaHandler *media_handler_;
 };
 
 #endif//_ppMediaPlayerExBusiness_H_
